@@ -1,0 +1,2725 @@
+# Generated with protoc-gen-openapi
+# https://github.com/google/gnostic/tree/master/cmd/protoc-gen-openapi
+
+openapi: 3.0.3
+info:
+    title: App API
+    version: 0.0.1
+paths:
+    /api/app_server/add_message:
+        post:
+            tags:
+                - App
+            operationId: App_AddMessage
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/AddMessageRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/AddMessageReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/buy:
+        post:
+            tags:
+                - App
+            description: 购买道具
+            operationId: App_Buy
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/BuyRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/BuyReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/buy_box:
+        post:
+            tags:
+                - App
+            description: 购买盲盒
+            operationId: App_BuyBox
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/BuyBoxRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/BuyBoxReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/buy_land:
+        post:
+            tags:
+                - App
+            operationId: App_BuyLand
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/BuyLandRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/BuyLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/buy_land_record:
+        get:
+            tags:
+                - App
+            operationId: App_BuyLandRecord
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/BuyLandRecordReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/buy_two:
+        post:
+            tags:
+                - App
+            description: 提现
+            operationId: App_BuyTwo
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/BuyTwoRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/BuyTwoReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/eth_authorize:
+        post:
+            tags:
+                - App
+            operationId: App_EthAuthorize
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/EthAuthorizeRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/EthAuthorizeReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/exchange:
+        post:
+            tags:
+                - App
+            description: 兑换
+            operationId: App_Exchange
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/ExchangeRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/ExchangeReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/get_buy_land:
+        get:
+            tags:
+                - App
+            operationId: App_GetBuyLand
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/GetBuyLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/get_land:
+        post:
+            tags:
+                - App
+            description: 合成土地
+            operationId: App_GetLand
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/GetLandRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/GetLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_add_out_rate:
+        post:
+            tags:
+                - App
+            description: 培育
+            operationId: App_LandAddOutRate
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandAddOutRateRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandAddOutRateReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play:
+        post:
+            tags:
+                - App
+            description: 土地替换，收回
+            operationId: App_LandPlay
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlayRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlayReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_five:
+        post:
+            tags:
+                - App
+            description: 浇水和出租的
+            operationId: App_LandPlayFive
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlayFiveRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlayFiveReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_four:
+        post:
+            tags:
+                - App
+            description: 杀虫和出租的
+            operationId: App_LandPlayFour
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlayFourRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlayFourReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_one:
+        post:
+            tags:
+                - App
+            description: 种植和出租的种植
+            operationId: App_LandPlayOne
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlayOneRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlayOneReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_seven:
+        post:
+            tags:
+                - App
+            description: 手套偷别人
+            operationId: App_LandPlaySeven
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlaySevenRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlaySevenReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_six:
+        post:
+            tags:
+                - App
+            description: 铲子铲别人
+            operationId: App_LandPlaySix
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlaySixRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlaySixReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_three:
+        post:
+            tags:
+                - App
+            description: 施肥和出租的
+            operationId: App_LandPlayThree
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlayThreeRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlayThreeReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/land_play_two:
+        post:
+            tags:
+                - App
+            description: 收成熟植物和出租的
+            operationId: App_LandPlayTwo
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LandPlayTwoRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LandPlayTwoReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/open_box:
+        post:
+            tags:
+                - App
+            description: 开盲盒
+            operationId: App_OpenBox
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/OpenBoxRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/OpenBoxReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/rent_land:
+        post:
+            tags:
+                - App
+            description: 出租土地结束出租
+            operationId: App_RentLand
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/RentLandRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/RentLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/sell:
+        post:
+            tags:
+                - App
+            description: 出售道具下架道具
+            operationId: App_Sell
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/SellRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/SellReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/set_buy_land:
+        get:
+            tags:
+                - App
+            operationId: App_SetBuyLand
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/SetBuyLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/set_git:
+        get:
+            tags:
+                - App
+            operationId: App_SetGit
+            parameters:
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+                - name: git
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/SetGitReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/set_giw:
+        get:
+            tags:
+                - App
+            operationId: App_SetGiw
+            parameters:
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+                - name: giw
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/SetGiwReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/set_land:
+        get:
+            tags:
+                - App
+            operationId: App_SetLand
+            parameters:
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+                - name: level
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/SetLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/skate_get:
+        post:
+            tags:
+                - App
+            description: 放大器质押解压
+            operationId: App_StakeGet
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/StakeGetRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StakeGetReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/skate_get_play:
+        post:
+            tags:
+                - App
+            description: 放大器游戏
+            operationId: App_StakeGetPlay
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/StakeGetPlayRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StakeGetPlayReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/stake_git:
+        post:
+            tags:
+                - App
+            description: 粮仓的质押和赎回
+            operationId: App_StakeGit
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/StakeGitRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StakeGitReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/test_sign:
+        get:
+            tags:
+                - App
+            operationId: App_TestSign
+            parameters:
+                - name: secret
+                  in: query
+                  schema:
+                    type: string
+                - name: signContent
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TestSignReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/to_amount:
+        post:
+            tags:
+                - App
+            description: 转账
+            operationId: App_ToAmount
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/ToAmountRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/ToAmountReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_back_list:
+        get:
+            tags:
+                - App
+            description: 仓库
+            operationId: App_UserBackList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: num
+                  in: query
+                  schema:
+                    type: string
+                - name: propType
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserBackListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_box_list:
+        get:
+            tags:
+                - App
+            description: 盲盒列表
+            operationId: App_UserBoxList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserBoxListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_buy:
+        get:
+            tags:
+                - App
+            description: 认购信息
+            operationId: App_UserBuy
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserBuyReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_buy_l:
+        get:
+            tags:
+                - App
+            description: 认购奖励内容
+            operationId: App_UserBuyL
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: num
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserBuyLReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_index_list:
+        get:
+            tags:
+                - App
+            description: 首页
+            operationId: App_UserIndexList
+            parameters:
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserIndexListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_info:
+        get:
+            tags:
+                - App
+            description: 用户信息
+            operationId: App_UserInfo
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserInfoReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_land:
+        get:
+            tags:
+                - App
+            description: 土地背包列表
+            operationId: App_UserLand
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: status
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserLandReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_market_land_list:
+        get:
+            tags:
+                - App
+            description: 市场 土地
+            operationId: App_UserMarketLandList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserMarketLandListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_market_my_list:
+        get:
+            tags:
+                - App
+            description: 市场 我的
+            operationId: App_UserMyMarketList
+            parameters:
+                - name: num
+                  in: query
+                  schema:
+                    type: string
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserMyMarketListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_market_prop_list:
+        get:
+            tags:
+                - App
+            description: 市场 道具
+            operationId: App_UserMarketPropList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: propType
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserMarketPropListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_market_rent_land_list:
+        get:
+            tags:
+                - App
+            description: 市场 出租
+            operationId: App_UserMarketRentLandList
+            parameters:
+                - name: rentType
+                  in: query
+                  schema:
+                    type: string
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserMarketRentLandListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_market_seed_list:
+        get:
+            tags:
+                - App
+            description: 市场 种子
+            operationId: App_UserMarketSeedList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserMarketSeedListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_notice_list:
+        get:
+            tags:
+                - App
+            description: 通知
+            operationId: App_UserNoticeList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserNoticeListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_order_list:
+        get:
+            tags:
+                - App
+            description: 排行榜
+            operationId: App_UserOrderList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserOrderListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_order_list_two:
+        get:
+            tags:
+                - App
+            operationId: App_UserOrderListTwo
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserOrderListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_rank_list:
+        get:
+            tags:
+                - App
+            operationId: App_UserRankList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserOrderListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_recommend:
+        get:
+            tags:
+                - App
+            description: 直推列表
+            operationId: App_UserRecommend
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserRecommendReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_recommend_l:
+        get:
+            tags:
+                - App
+            description: L1L2L3内容
+            operationId: App_UserRecommendL
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: num
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserRecommendLReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_reward_list:
+        get:
+            tags:
+                - App
+            description: 粮仓列表
+            operationId: App_UserRewardList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserRewardListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_skate_reward_list:
+        get:
+            tags:
+                - App
+            description: 果实放大器 获奖记录
+            operationId: App_UserStakeRewardList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserStakeRewardListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_stake_git_reward_list:
+        get:
+            tags:
+                - App
+            description: 粮仓列表
+            operationId: App_UserStakeGitRewardList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserStakeGitRewardListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_stake_git_stake_list:
+        get:
+            tags:
+                - App
+            description: 粮仓列表
+            operationId: App_UserStakeGitStakeList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+                - name: isQueue
+                  in: query
+                  schema:
+                    type: string
+                - name: address
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserStakeGitStakeListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/user_team_deposit_list:
+        get:
+            tags:
+                - App
+            operationId: App_UserTeamDepositList
+            parameters:
+                - name: page
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/UserTeamDepositListReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+    /api/app_server/withdraw:
+        post:
+            tags:
+                - App
+            description: 提现
+            operationId: App_Withdraw
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/WithdrawRequest_SendBody'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/WithdrawReply'
+                default:
+                    description: Default error response
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Status'
+components:
+    schemas:
+        AddMessageReply:
+            type: object
+            properties:
+                token:
+                    type: string
+                status:
+                    type: string
+        AddMessageRequest_SendBody:
+            type: object
+            properties:
+                content:
+                    type: string
+                sign:
+                    type: string
+        BuyBoxReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                statusTwo:
+                    type: string
+                id:
+                    type: string
+        BuyBoxRequest_SendBody:
+            type: object
+            properties:
+                num:
+                    type: string
+                sign:
+                    type: string
+        BuyLandRecordReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/BuyLandRecordReply_List'
+        BuyLandRecordReply_List:
+            type: object
+            properties:
+                address:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                createdAt:
+                    type: string
+        BuyLandReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        BuyLandRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                amount:
+                    type: string
+                buyType:
+                    type: string
+        BuyReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        BuyRequest_SendBody:
+            type: object
+            properties:
+                id:
+                    type: string
+                buyType:
+                    type: string
+                sign:
+                    type: string
+        BuyTwoReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        BuyTwoRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                amount:
+                    type: string
+        EthAuthorizeReply:
+            type: object
+            properties:
+                token:
+                    type: string
+                status:
+                    type: string
+        EthAuthorizeRequest_SendBody:
+            type: object
+            properties:
+                address:
+                    type: string
+                code:
+                    type: string
+                sign:
+                    type: string
+        ExchangeReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        ExchangeRequest_SendBody:
+            type: object
+            properties:
+                amount:
+                    type: string
+                sign:
+                    type: string
+                exchangeType:
+                    type: string
+        GetBuyLandReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                amountOne:
+                    type: number
+                    format: double
+                limit:
+                    type: string
+                level:
+                    type: string
+                now:
+                    type: string
+        GetLandReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        GetLandRequest_SendBody:
+            type: object
+            properties:
+                num:
+                    type: string
+                landOneId:
+                    type: string
+                landTwoId:
+                    type: string
+                sign:
+                    type: string
+        GoogleProtobufAny:
+            type: object
+            properties:
+                '@type':
+                    type: string
+                    description: The type of the serialized message.
+            additionalProperties: true
+            description: Contains an arbitrary serialized message along with a @type that describes the type of the serialized message.
+        LandAddOutRateReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        LandAddOutRateRequest_SendBody:
+            type: object
+            properties:
+                landId:
+                    type: string
+                id:
+                    type: string
+                sign:
+                    type: string
+        LandPlayFiveReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        LandPlayFiveRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                landUseId:
+                    type: string
+                id:
+                    type: string
+        LandPlayFourReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        LandPlayFourRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                landUseId:
+                    type: string
+                id:
+                    type: string
+        LandPlayOneReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                statusTwo:
+                    type: string
+        LandPlayOneRequest_SendBody:
+            type: object
+            properties:
+                landId:
+                    type: string
+                seedId:
+                    type: string
+                sign:
+                    type: string
+        LandPlayReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                statusTwo:
+                    type: string
+        LandPlayRequest_SendBody:
+            type: object
+            properties:
+                num:
+                    type: string
+                landId:
+                    type: string
+                landTwoId:
+                    type: string
+                locationNum:
+                    type: string
+                sign:
+                    type: string
+                userAddress:
+                    type: string
+        LandPlaySevenReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                statusTwo:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+        LandPlaySevenRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                landUseId:
+                    type: string
+                id:
+                    type: string
+        LandPlaySixReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        LandPlaySixRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                landUseId:
+                    type: string
+                id:
+                    type: string
+        LandPlayThreeReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        LandPlayThreeRequest_SendBody:
+            type: object
+            properties:
+                sign:
+                    type: string
+                landUseId:
+                    type: string
+                id:
+                    type: string
+        LandPlayTwoReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                statusTwo:
+                    type: string
+        LandPlayTwoRequest_SendBody:
+            type: object
+            properties:
+                landUseId:
+                    type: string
+                sign:
+                    type: string
+        OpenBoxReply:
+            type: object
+            properties:
+                id:
+                    type: string
+                status:
+                    type: string
+                openType:
+                    type: string
+                num:
+                    type: string
+                useNum:
+                    type: string
+                time:
+                    type: string
+                outMax:
+                    type: number
+                    format: double
+        OpenBoxRequest_SendBody:
+            type: object
+            properties:
+                id:
+                    type: string
+                sign:
+                    type: string
+        RentLandReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                statusTwo:
+                    type: string
+        RentLandRequest_SendBody:
+            type: object
+            properties:
+                num:
+                    type: string
+                landId:
+                    type: string
+                rate:
+                    type: string
+                sign:
+                    type: string
+                landIds:
+                    type: string
+        SellReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        SellRequest_SendBody:
+            type: object
+            properties:
+                id:
+                    type: string
+                num:
+                    type: string
+                sellType:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                sign:
+                    type: string
+                landIds:
+                    type: string
+        SetBuyLandReply:
+            type: object
+            properties: {}
+        SetGitReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        SetGiwReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        SetLandReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        StakeGetPlayReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                playStatus:
+                    type: string
+        StakeGetPlayRequest_SendBody:
+            type: object
+            properties:
+                amount:
+                    type: string
+                sign:
+                    type: string
+        StakeGetReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        StakeGetRequest_SendBody:
+            type: object
+            properties:
+                num:
+                    type: string
+                amount:
+                    type: string
+                sign:
+                    type: string
+        StakeGitReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        StakeGitRequest_SendBody:
+            type: object
+            properties:
+                num:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                id:
+                    type: string
+                day:
+                    type: string
+                sign:
+                    type: string
+        Status:
+            type: object
+            properties:
+                code:
+                    type: integer
+                    description: The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].
+                    format: int32
+                message:
+                    type: string
+                    description: A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
+                details:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/GoogleProtobufAny'
+                    description: A list of messages that carry the error details.  There is a common set of message types for APIs to use.
+            description: 'The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors).'
+        TestSignReply:
+            type: object
+            properties:
+                sign:
+                    type: string
+        ToAmountReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        ToAmountRequest_SendBody:
+            type: object
+            properties:
+                amount:
+                    type: string
+                sign:
+                    type: string
+                address:
+                    type: string
+        UserBackListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserBackListReply_List'
+        UserBackListReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                type:
+                    type: string
+                num:
+                    type: string
+                useNum:
+                    type: string
+                status:
+                    type: string
+                outMax:
+                    type: number
+                    format: double
+                time:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                content:
+                    type: string
+                eContent:
+                    type: string
+        UserBoxListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserBoxListReply_List'
+        UserBoxListReply_List:
+            type: object
+            properties:
+                content:
+                    type: string
+                createdAt:
+                    type: string
+        UserBuyLReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserBuyLReply_List'
+        UserBuyLReply_List:
+            type: object
+            properties:
+                amountThree:
+                    type: number
+                    format: double
+                amount:
+                    type: number
+                    format: double
+                amountTwo:
+                    type: number
+                    format: double
+                address:
+                    type: string
+                num:
+                    type: string
+                createdAt:
+                    type: string
+        UserBuyReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                one:
+                    type: number
+                    format: double
+                two:
+                    type: number
+                    format: double
+                three:
+                    type: number
+                    format: double
+                four:
+                    type: number
+                    format: double
+                five:
+                    type: number
+                    format: double
+                six:
+                    type: number
+                    format: double
+                seven:
+                    type: number
+                    format: double
+                eight:
+                    type: number
+                    format: double
+                nine:
+                    type: number
+                    format: double
+                ten:
+                    type: number
+                    format: double
+                elven:
+                    type: number
+                    format: double
+                twelve:
+                    type: number
+                    format: double
+                thirteen:
+                    type: number
+                    format: double
+                fourteen:
+                    type: number
+                    format: double
+                recommendNum:
+                    type: string
+                price:
+                    type: number
+                    format: double
+                giw:
+                    type: number
+                    format: double
+                usdt:
+                    type: number
+                    format: double
+                buyNum:
+                    type: string
+                teamNum:
+                    type: string
+                level:
+                    type: string
+        UserIndexListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserIndexListReply_List'
+        UserIndexListReply_List:
+            type: object
+            properties:
+                locationNum:
+                    type: string
+                landId:
+                    type: string
+                landStatus:
+                    type: string
+                landLevel:
+                    type: string
+                health:
+                    type: string
+                outRate:
+                    type: number
+                    format: double
+                perHealth:
+                    type: string
+                landUseId:
+                    type: string
+                seedId:
+                    type: string
+                start:
+                    type: string
+                end:
+                    type: string
+                currentTime:
+                    type: string
+                status:
+                    type: string
+                reward:
+                    type: number
+                    format: double
+                oneOne:
+                    type: string
+                rewardStatus:
+                    type: string
+                plantUserAddress:
+                    type: string
+                landUserAddress:
+                    type: string
+                canUnLand:
+                    type: string
+        UserInfoReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                myAddress:
+                    type: string
+                level:
+                    type: string
+                giw:
+                    type: number
+                    format: double
+                git:
+                    type: number
+                    format: double
+                usdt:
+                    type: number
+                    format: double
+                recommendTotal:
+                    type: string
+                recommendTotalBiw:
+                    type: number
+                    format: double
+                recommendTotalReward:
+                    type: number
+                    format: double
+                recommendTotalBiwOne:
+                    type: number
+                    format: double
+                recommendTotalRewardOne:
+                    type: number
+                    format: double
+                recommendTotalBiwTwo:
+                    type: number
+                    format: double
+                recommendTotalRewardTwo:
+                    type: number
+                    format: double
+                recommendTotalBiwThree:
+                    type: number
+                    format: double
+                recommendTotalRewardThree:
+                    type: number
+                    format: double
+                myStakeGit:
+                    type: number
+                    format: double
+                todayRewardSkateGit:
+                    type: number
+                    format: double
+                rewardStakeRate:
+                    type: number
+                    format: double
+                box:
+                    type: string
+                boxSell:
+                    type: string
+                start:
+                    type: string
+                end:
+                    type: string
+                boxSellAmount:
+                    type: number
+                    format: double
+                exchangeRate:
+                    type: number
+                    format: double
+                exchangeFeeRate:
+                    type: number
+                    format: double
+                exchangeRateTwo:
+                    type: number
+                    format: double
+                exchangeFeeRateTwo:
+                    type: number
+                    format: double
+                stakeGetTotal:
+                    type: number
+                    format: double
+                myStakeGetTotal:
+                    type: number
+                    format: double
+                stakeGetOverFeeRate:
+                    type: number
+                    format: double
+                sellFeeRate:
+                    type: number
+                    format: double
+                withdrawMin:
+                    type: string
+                withdrawMax:
+                    type: string
+                withdrawMinTwo:
+                    type: string
+                withdrawMaxTwo:
+                    type: string
+                withdrawMinThree:
+                    type: number
+                    format: double
+                withdrawMaxThree:
+                    type: number
+                    format: double
+                exchangeMinThree:
+                    type: number
+                    format: double
+                exchangeMaxThree:
+                    type: number
+                    format: double
+                createdAt:
+                    type: string
+                biwPrice:
+                    type: number
+                    format: double
+                usdtTwo:
+                    type: number
+                    format: double
+                addressThree:
+                    type: string
+                giwTwo:
+                    type: number
+                    format: double
+                rentOne:
+                    type: number
+                    format: double
+                rentTwo:
+                    type: number
+                    format: double
+                rentThree:
+                    type: number
+                    format: double
+                listM:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserInfoReply_ListM'
+                adminListM:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserInfoReply_AdminListM'
+                canLand:
+                    type: string
+                red:
+                    type: string
+                sySContent:
+                    type: string
+                sySContentE:
+                    type: string
+                maxPlay:
+                    type: number
+                    format: double
+                minPlay:
+                    type: number
+                    format: double
+                maxStake:
+                    type: number
+                    format: double
+                minStake:
+                    type: number
+                    format: double
+                minStakeTwo:
+                    type: number
+                    format: double
+                canPlayAdd:
+                    type: string
+                canPlaySix:
+                    type: string
+                gitNew:
+                    type: number
+                    format: double
+                gitNewNew:
+                    type: number
+                    format: double
+                exchangeRateThree:
+                    type: number
+                    format: double
+                withdrawRateThree:
+                    type: number
+                    format: double
+                exchangeThree:
+                    type: number
+                    format: double
+                one:
+                    type: number
+                    format: double
+                two:
+                    type: number
+                    format: double
+                three:
+                    type: number
+                    format: double
+                canUsdtWithdraw:
+                    type: number
+                    format: double
+                newOne:
+                    type: number
+                    format: double
+                newTwo:
+                    type: number
+                    format: double
+                newThree:
+                    type: number
+                    format: double
+                newFour:
+                    type: string
+                newFive:
+                    type: string
+                newSix:
+                    type: string
+        UserInfoReply_AdminListM:
+            type: object
+            properties:
+                content:
+                    type: string
+                contentTwo:
+                    type: string
+        UserInfoReply_ListM:
+            type: object
+            properties:
+                address:
+                    type: string
+                content:
+                    type: string
+        UserLandReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserLandReply_List'
+        UserLandReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                level:
+                    type: string
+                health:
+                    type: string
+                status:
+                    type: string
+                outRate:
+                    type: number
+                    format: double
+                perHealth:
+                    type: string
+                rentAmount:
+                    type: number
+                    format: double
+                one:
+                    type: string
+                two:
+                    type: string
+                three:
+                    type: string
+                content:
+                    type: string
+                eContent:
+                    type: string
+                addressTwo:
+                    type: string
+                rentPlant:
+                    type: string
+        UserMarketLandListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserMarketLandListReply_List'
+        UserMarketLandListReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                level:
+                    type: string
+                maxHealth:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                perHealth:
+                    type: string
+                outPutRate:
+                    type: string
+                address:
+                    type: string
+                content:
+                    type: string
+                eContent:
+                    type: string
+        UserMarketPropListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserMarketPropListReply_List'
+        UserMarketPropListReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                num:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                useMax:
+                    type: string
+                address:
+                    type: string
+                content:
+                    type: string
+                eContent:
+                    type: string
+        UserMarketRentLandListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserMarketRentLandListReply_List'
+        UserMarketRentLandListReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                level:
+                    type: string
+                maxHealth:
+                    type: string
+                rentAmount:
+                    type: number
+                    format: double
+                address:
+                    type: string
+                outPutRate:
+                    type: number
+                    format: double
+                perHealth:
+                    type: string
+                content:
+                    type: string
+                eContent:
+                    type: string
+                addressTwo:
+                    type: string
+        UserMarketSeedListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserMarketSeedListReply_List'
+        UserMarketSeedListReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                num:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                outMax:
+                    type: number
+                    format: double
+                time:
+                    type: string
+                address:
+                    type: string
+                content:
+                    type: string
+                eContent:
+                    type: string
+        UserMyMarketListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserMyMarketListReply_List'
+        UserMyMarketListReply_List:
+            type: object
+            properties:
+                address:
+                    type: string
+                id:
+                    type: string
+                type:
+                    type: string
+                num:
+                    type: string
+                useNum:
+                    type: string
+                outMax:
+                    type: number
+                    format: double
+                time:
+                    type: string
+                level:
+                    type: string
+                status:
+                    type: string
+                maxHealth:
+                    type: string
+                perHealth:
+                    type: string
+                outPutRate:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                rentAmount:
+                    type: number
+                    format: double
+                content:
+                    type: string
+                eContent:
+                    type: string
+        UserNoticeListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserNoticeListReply_List'
+        UserNoticeListReply_List:
+            type: object
+            properties:
+                eContent:
+                    type: string
+                content:
+                    type: string
+                createdAt:
+                    type: string
+        UserOrderListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserOrderListReply_List'
+        UserOrderListReply_List:
+            type: object
+            properties:
+                address:
+                    type: string
+                git:
+                    type: number
+                    format: double
+                rate:
+                    type: number
+                    format: double
+                red:
+                    type: string
+        UserRecommendLReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserRecommendLReply_List'
+        UserRecommendLReply_List:
+            type: object
+            properties:
+                address:
+                    type: string
+                amount:
+                    type: string
+                createdAt:
+                    type: string
+        UserRecommendReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserRecommendReply_List'
+        UserRecommendReply_List:
+            type: object
+            properties:
+                address:
+                    type: string
+                level:
+                    type: string
+                createdAt:
+                    type: string
+        UserRewardListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserRewardListReply_List'
+        UserRewardListReply_List:
+            type: object
+            properties:
+                amount:
+                    type: number
+                    format: double
+                ispayAmount:
+                    type: number
+                    format: double
+                address:
+                    type: string
+                vip:
+                    type: string
+                createdAt:
+                    type: string
+        UserStakeGitRewardListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserStakeGitRewardListReply_List'
+        UserStakeGitRewardListReply_List:
+            type: object
+            properties:
+                amount:
+                    type: number
+                    format: double
+                createdAt:
+                    type: string
+        UserStakeGitStakeListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                myCount:
+                    type: string
+                todayAmount:
+                    type: number
+                    format: double
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserStakeGitStakeListReply_List'
+        UserStakeGitStakeListReply_List:
+            type: object
+            properties:
+                id:
+                    type: string
+                address:
+                    type: string
+                stake:
+                    type: number
+                    format: double
+                reward:
+                    type: number
+                    format: double
+                createdAt:
+                    type: string
+                day:
+                    type: string
+        UserStakeRewardListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserStakeRewardListReply_List'
+        UserStakeRewardListReply_List:
+            type: object
+            properties:
+                address:
+                    type: string
+                content:
+                    type: string
+                amount:
+                    type: number
+                    format: double
+                reward:
+                    type: string
+                status:
+                    type: string
+        UserTeamDepositListReply:
+            type: object
+            properties:
+                status:
+                    type: string
+                count:
+                    type: string
+                list:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/UserTeamDepositListReply_List'
+        UserTeamDepositListReply_List:
+            type: object
+            properties:
+                amount:
+                    type: number
+                    format: double
+                address:
+                    type: string
+                createdAt:
+                    type: string
+        WithdrawReply:
+            type: object
+            properties:
+                status:
+                    type: string
+        WithdrawRequest_SendBody:
+            type: object
+            properties:
+                amount:
+                    type: number
+                    format: double
+                sign:
+                    type: string
+                withdrawType:
+                    type: string
+tags:
+    - name: App
