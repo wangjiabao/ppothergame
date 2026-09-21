@@ -3,11 +3,12 @@ package data
 import (
 	"context"
 	"game/internal/biz"
+	"strconv"
+	"time"
+
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/log"
 	"gorm.io/gorm"
-	"strconv"
-	"time"
 )
 
 type User struct {
@@ -938,6 +939,7 @@ func (u *UserRepo) GetUserRecommends(ctx context.Context) ([]*biz.UserRecommend,
 func (u *UserRepo) CreateUser(ctx context.Context, uc *biz.User) (*biz.User, error) {
 	var user User
 	user.Address = uc.Address
+	user.AmountUsdt = 100
 
 	res := u.data.DB(ctx).Table("user").Create(&user)
 	if res.Error != nil {
