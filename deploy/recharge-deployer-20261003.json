@@ -1,0 +1,52 @@
+{
+  "purpose": "PP game recharge contract deployment wallet",
+  "client_date": "2026-10-03",
+  "network": "BNB Smart Chain Mainnet",
+  "chain_id": 56,
+  "address": "0xf39378039D6a422bEF8D88cEa08D727618Ae624a",
+  "keystore_file": "/Users/wangjiabao/.local/share/pp-game-deployment/private/20261003-bsc-recharge/deployer.keystore.json",
+  "password_file": "/Users/wangjiabao/.local/share/pp-game-deployment/secrets/20261003-bsc-recharge.password",
+  "encryption": {
+    "format": "Web3 Secret Storage v3",
+    "kdf": "scrypt",
+    "library": "ethers 6.16.0"
+  },
+  "verification": {
+    "saved_keystore_roundtrip": true,
+    "secret_files_mode": "0600",
+    "secret_directories_mode": "0700"
+  },
+  "status": "BuyBurn and BuySomething deployed, verified through two RPCs and finalized; frontend addresses updated and both builds completed",
+  "deployments": {
+    "buyburn": {
+      "chain_id": 56,
+      "address": "0x033aADea05aFa0a2c05850534702846F530f6FF2",
+      "transaction_hash": "0x4d94b67bf0bd29b057a8b0f0f823ba02c1dbd2ad4bc46f0311eccf96b4620ccb",
+      "block_number": 125463887,
+      "report_file": "/Users/wangjiabao/Documents/ppothergame/deploy/buyburn-bsc-20261003.json"
+    },
+    "buysomething": {
+      "chain_id": 56,
+      "address": "0xC769aDC38a427b569142A80ff5605f2F969db61E",
+      "transaction_hash": "0x1f5dd1c4713c0d32a2f8a5dcd085b7cd72dc60281df0d375215b87fa9ae1fd59",
+      "block_number": 125469035,
+      "report_file": "/Users/wangjiabao/Documents/ppothergame/deploy/buysomething-bsc-20261003.json",
+      "recipients": [
+        { "address": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1", "parts": 995 },
+        { "address": "0xa33b9A19E702fb08e5744432Ac328A24DCc90235", "parts": 5 }
+      ],
+      "recipient_denominator": 1000
+    }
+  },
+  "balance_after_buyburn_wei": "4976980250000000",
+  "balance_after_buysomething_wei": "4951228400000000",
+  "frontend_builds": {
+    "app": "/Users/wangjiabao/Documents/farm-game5/dist",
+    "admin": "/Users/wangjiabao/Documents/game-admin/dist"
+  },
+  "backend_manual_updates_pending": true,
+  "frontend_api": {
+    "app": "https://www.ppflsc.com",
+    "admin": "https://www.ppflsc.com/"
+  }
+}

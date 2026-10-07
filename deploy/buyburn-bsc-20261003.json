@@ -1,0 +1,76 @@
+{
+  "client_date": "2026-10-03",
+  "contract": "BuyBurn",
+  "source": "contracts/bsc/BuyBurn.sol",
+  "status": "deployed_verified_two_rpcs_finalized",
+  "chain_id": 56,
+  "rpc": "https://bsc-dataseed.bnbchain.org",
+  "deployer": "0xf39378039D6a422bEF8D88cEa08D727618Ae624a",
+  "token": "0xBF9b0594E110C381F2606961C78641a194999999",
+  "token_name": "ispay",
+  "token_symbol": "ispay",
+  "token_decimals": 18,
+  "burn_address": "0x000000000000000000000000000000000000dEaD",
+  "amount_unit": "num * 10^15; buy(1000) transfers 1 ISPAY",
+  "nonce": 0,
+  "contract_address": "0x033aADea05aFa0a2c05850534702846F530f6FF2",
+  "estimated_gas": "465216",
+  "gas_limit": "558260",
+  "gas_price_wei": "50000000",
+  "balance_before_wei": "5000000000000000",
+  "maximum_fee_wei": "27913000000000",
+  "compiler": "0.8.26+commit.8a97fa7a.Emscripten.clang",
+  "compiler_settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": true,
+    "evmVersion": "cancun",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    }
+  },
+  "creation_code_hash": "0xd2895a7ef48a3d4e890cf059bd19db6ac2b8f7309edc2cb0bed50a696a72499f",
+  "runtime_code_hash": "0x42544f574142ba2dbe23f8dc52dfcaa4934547d892a80b3140bc28f874a5dc0d",
+  "transaction_hash": "0x4d94b67bf0bd29b057a8b0f0f823ba02c1dbd2ad4bc46f0311eccf96b4620ccb",
+  "block_number": 125463887,
+  "block_hash": "0xb134484d8a950a9c5331e8278fd0dbe8bf99769833aa652d1517e5e03b3d41e4",
+  "receipt_status": 1,
+  "gas_used": "460395",
+  "effective_gas_price_wei": "50000000",
+  "actual_fee_wei": "23019750000000",
+  "confirmations": 11,
+  "balance_after_wei": "4976980250000000",
+  "verification": {
+    "runtime_bytecode_matches": true,
+    "creation_bytecode_matches": true,
+    "token_address_matches": true,
+    "initial_user_length": 0
+  },
+  "independent_verification": {
+    "rpc": "https://bsc-dataseed1.defibit.io",
+    "chain_id": 56,
+    "receipt_status": 1,
+    "block_hash_matches": true,
+    "runtime_bytecode_matches": true,
+    "creation_bytecode_matches": true,
+    "configured_token": "0xBF9b0594E110C381F2606961C78641a194999999",
+    "user_length": 0,
+    "head_block": 125464093,
+    "confirmations": 207,
+    "finalized_block": 125464091,
+    "finalized_covers_deployment": true
+  }
+}

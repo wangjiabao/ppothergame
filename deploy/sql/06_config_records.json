@@ -1,0 +1,5367 @@
+{
+  "generated_date": "2026-10-02",
+  "sources": {
+    "ppothergame": "f29548c52fb2805ac8f657717f9ca04209e0d40a",
+    "ppothergameadmin": "f5d6e8cb8ae2430e03a9012fbb0ca764f8e7166d"
+  },
+  "counts": {
+    "queried_keys": 120,
+    "keys_with_read_branches": 104,
+    "query_only_keys": 16
+  },
+  "records": [
+    {
+      "key_name": "box_start",
+      "id": 16,
+      "id_basis": "代码固定对应关系",
+      "name": "box_start",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "时间文本 YYYY-MM-DD HH:MM:SS，代码按 UTC 解析"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 2143
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetBox",
+          "line": 6141
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1055,
+          "body": "{\n\tboxStart = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyBox",
+          "line": 3984,
+          "body": "{\n\tboxStart = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 842,
+          "body": "{\n\tboxStart = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "BuyBox",
+          "line": 2165,
+          "body": "{\n\tboxStart = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminGetBox",
+          "line": 6162,
+          "body": "{\n\tboxStart = vConfig.Value\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "box_end",
+      "id": 17,
+      "id_basis": "代码固定对应关系",
+      "name": "box_end",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "时间文本 YYYY-MM-DD HH:MM:SS，代码按 UTC 解析"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 2143
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetBox",
+          "line": 6141
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1058,
+          "body": "{\n\tboxEnd = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyBox",
+          "line": 3987,
+          "body": "{\n\tboxEnd = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 845,
+          "body": "{\n\tboxEnd = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "BuyBox",
+          "line": 2168,
+          "body": "{\n\tboxEnd = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminGetBox",
+          "line": 6165,
+          "body": "{\n\tboxEnd = vConfig.Value\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "box_amount",
+      "id": 18,
+      "id_basis": "代码固定对应关系",
+      "name": "box_amount",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "OpenBox",
+          "line": 4166
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 2143
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetBox",
+          "line": 6141
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1061,
+          "body": "{\n\tboxAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyBox",
+          "line": 3990,
+          "body": "{\n\tboxAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "OpenBox",
+          "line": 4188,
+          "body": "{\n\tusdtAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 848,
+          "body": "{\n\tboxAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "BuyBox",
+          "line": 2171,
+          "body": "{\n\tboxAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminGetBox",
+          "line": 6168,
+          "body": "{\n\tboxAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "box_num",
+      "id": 19,
+      "id_basis": "代码固定对应关系",
+      "name": "box_num",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserBoxList",
+          "line": 2250
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserBoxList",
+          "line": 1303
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 2143
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetBox",
+          "line": 6141
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminSetBox",
+          "line": 6194
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1027,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserBoxList",
+          "line": 2260,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyBox",
+          "line": 3977,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 821,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserBoxList",
+          "line": 1313,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "BuyBox",
+          "line": 2158,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminGetBox",
+          "line": 6156,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminSetBox",
+          "line": 6204,
+          "body": "{\n\tboxNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "box_max",
+      "id": 20,
+      "id_basis": "代码固定对应关系",
+      "name": "box_max",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 2143
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetBox",
+          "line": 6141
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1064,
+          "body": "{\n\tboxMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyBox",
+          "line": 3993,
+          "body": "{\n\tboxMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 851,
+          "body": "{\n\tboxMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "BuyBox",
+          "line": 2174,
+          "body": "{\n\tboxMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminGetBox",
+          "line": 6171,
+          "body": "{\n\tboxMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "box_sell_num",
+      "id": 21,
+      "id_basis": "代码固定对应关系",
+      "name": "box_sell_num",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 2143
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetBox",
+          "line": 6141
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1030,
+          "body": "{\n\tboxSellNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyBox",
+          "line": 3980,
+          "body": "{\n\tboxSellNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n\tboxSellNumOrigin = vConfig.Value\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 824,
+          "body": "{\n\tboxSellNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "BuyBox",
+          "line": 2161,
+          "body": "{\n\tboxSellNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminGetBox",
+          "line": 6159,
+          "body": "{\n\tboxSellNum, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "u_price",
+      "id": 26,
+      "id_basis": "代码固定对应关系",
+      "name": "u_price",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserBuy",
+          "line": 742
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserBuyL",
+          "line": 1868
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyBox",
+          "line": 3961
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyTwo",
+          "line": 9113
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminSetConfig",
+          "line": 6487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewThree",
+          "line": 9395
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminRewardListTwo",
+          "line": 9545
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserBuy",
+          "line": 9765
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserBuy",
+          "line": 751,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1073,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserBuyL",
+          "line": 1877,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "LandPlayTwo",
+          "line": 4772,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "LandPlaySix",
+          "line": 5658,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "BuyTwo",
+          "line": 9126,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminSetConfig",
+          "line": 6497,
+          "body": "{\n\tprice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6752,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewThree",
+          "line": 9403,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminRewardListTwo",
+          "line": 9555,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserBuy",
+          "line": 9774,
+          "body": "{\n\tuPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "all_each",
+      "id": 100,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "all_each",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6803,
+          "body": "{\n\tallEach, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "area_five",
+      "id": 101,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "area_five",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6797,
+          "body": "{\n\tareaFive, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "area_four",
+      "id": 102,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "area_four",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6794,
+          "body": "{\n\tareaFour, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "area_one",
+      "id": 103,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "area_one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6785,
+          "body": "{\n\tareaOne, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "area_three",
+      "id": 104,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "area_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6791,
+          "body": "{\n\tareaThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "area_two",
+      "id": 105,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "area_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6788,
+          "body": "{\n\tareaTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "area_zero",
+      "id": 106,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "area_zero",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6800,
+          "body": "{\n\tareaZero, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "b_price",
+      "id": 107,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "b_price",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1046,
+          "body": "{\n\tbPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 833,
+          "body": "{\n\tbPrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_eight",
+      "id": 108,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_eight",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6776,
+          "body": "{\n\teightRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_five",
+      "id": 109,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_five",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6767,
+          "body": "{\n\tfiveRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_four",
+      "id": 110,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_four",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6764,
+          "body": "{\n\tfourRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_land_one",
+      "id": 111,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_land_one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Buy",
+          "line": 6387
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "Buy",
+          "line": 6404,
+          "body": "{\n\tbuyLandOne, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_land_three",
+      "id": 112,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_land_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Buy",
+          "line": 6387
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "Buy",
+          "line": 6410,
+          "body": "{\n\tbuyLandThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_land_two",
+      "id": 113,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_land_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Buy",
+          "line": 6387
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "Buy",
+          "line": 6407,
+          "body": "{\n\tbuyLandTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_one",
+      "id": 114,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6755,
+          "body": "{\n\toneRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_seven",
+      "id": 115,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_seven",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6773,
+          "body": "{\n\tsevenRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_six",
+      "id": 116,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_six",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6770,
+          "body": "{\n\tsixRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_three",
+      "id": 117,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6761,
+          "body": "{\n\tthreeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "buy_two",
+      "id": 118,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "buy_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6758,
+          "body": "{\n\ttwoRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "can_withdraw",
+      "id": 119,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "can_withdraw",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9454,
+          "body": "{\n\tcanWithdraw, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "exchange_fee_rate",
+      "id": 120,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_fee_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "Exchange",
+          "line": 5165
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1049,
+          "body": "{\n\texchangeFeeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 836,
+          "body": "{\n\texchangeFeeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "Exchange",
+          "line": 5174,
+          "body": "{\n\trate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "exchange_fee_rate_two",
+      "id": 121,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_fee_rate_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1052,
+          "body": "{\n\texchangeFeeRateTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "exchange_max_three",
+      "id": 122,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_max_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1118,
+          "body": "{\n\texchangeMaxThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "exchange_min_three",
+      "id": 123,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_min_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1121,
+          "body": "{\n\texchangeMinThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "exchange_price",
+      "id": 124,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_price",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "exchange_price_open",
+      "id": 125,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_price_open",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "exchange_stake_rate",
+      "id": 126,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_stake_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "exchange_three",
+      "id": 127,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "exchange_three_rate",
+      "id": 128,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "exchange_three_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1106,
+          "body": "{\n\tvOneRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_1",
+      "id": 129,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_1",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3475,
+          "body": "{\n\tg1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8155,
+          "body": "{\n\tg1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_2",
+      "id": 130,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_2",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3478,
+          "body": "{\n\tg2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8158,
+          "body": "{\n\tg2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_3",
+      "id": 131,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_3",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3481,
+          "body": "{\n\tg3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8161,
+          "body": "{\n\tg3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_4",
+      "id": 132,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_4",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3484,
+          "body": "{\n\tg4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8164,
+          "body": "{\n\tg4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_5",
+      "id": 133,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_5",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3487,
+          "body": "{\n\tg5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8167,
+          "body": "{\n\tg5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_6",
+      "id": 134,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_6",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3490,
+          "body": "{\n\tg6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8170,
+          "body": "{\n\tg6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_7",
+      "id": 135,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_7",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3493,
+          "body": "{\n\tg7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8173,
+          "body": "{\n\tg7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "g_8",
+      "id": 136,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "g_8",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRankList",
+          "line": 3459
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDaily",
+          "line": 8139
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserRankList",
+          "line": 3496,
+          "body": "{\n\tg8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDaily",
+          "line": 8176,
+          "body": "{\n\tg8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "low_reward_u",
+      "id": 137,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "low_reward_u",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "max_play",
+      "id": 138,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "max_play",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGetPlay",
+          "line": 8535
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1091,
+          "body": "{\n\tmaxPlay, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGetPlay",
+          "line": 8548,
+          "body": "{\n\tmaxPlay, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "max_stake",
+      "id": 139,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "max_stake",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGet",
+          "line": 8337
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1097,
+          "body": "{\n\tmaxStake, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGet",
+          "line": 8349,
+          "body": "{\n\tmaxStake, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "min_play",
+      "id": 140,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "min_play",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGetPlay",
+          "line": 8535
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1094,
+          "body": "{\n\tminPlay, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGetPlay",
+          "line": 8552,
+          "body": "{\n\tminPlay, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "min_stake",
+      "id": 141,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "min_stake",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGet",
+          "line": 8337
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1100,
+          "body": "{\n\tminStake, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGet",
+          "line": 8353,
+          "body": "{\n\tminStake, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "min_stake_two",
+      "id": 142,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "min_stake_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGet",
+          "line": 8337
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1103,
+          "body": "{\n\tminStakeTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGet",
+          "line": 8357,
+          "body": "{\n\tminUnStake, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "one",
+      "id": 143,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1124,
+          "body": "{\n\tone, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "one_rate",
+      "id": 144,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "one_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 2692
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 3424
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "LandPlayTwo",
+          "line": 2702,
+          "body": "{\n\toneRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "LandPlaySix",
+          "line": 3434,
+          "body": "{\n\toneRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "one_rate_new",
+      "id": 145,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "one_rate_new",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9033,
+          "body": "{\n\toneRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "open_box_price",
+      "id": 146,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "open_box_price",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "OpenBox",
+          "line": 4166
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "open_box_price_use",
+      "id": 147,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "open_box_price_use",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "OpenBox",
+          "line": 4166
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "play_one_rate",
+      "id": 148,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "play_one_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayOne",
+          "line": 4579
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "LandPlayOne",
+          "line": 4589,
+          "body": "{\n\tplayOneRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "play_two_rate",
+      "id": 149,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "play_two_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayOne",
+          "line": 4579
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "LandPlayOne",
+          "line": 4592,
+          "body": "{\n\tplayTwoRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "prop_two_two",
+      "id": 150,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "prop_two_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "LandPlaySix",
+          "line": 5662,
+          "body": "{\n\tpropTwoTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "queue_amount",
+      "id": 151,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "queue_amount",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserStakeGitStakeList",
+          "line": 2062
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminSetQueue",
+          "line": 6555
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserStakeGitStakeList",
+          "line": 2071,
+          "body": "{\n\tqueueAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminSetQueue",
+          "line": 6562,
+          "body": "{\n\tqueueAmount, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_1",
+      "id": 152,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_1",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9044,
+          "body": "{\n\tr1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_10",
+      "id": 153,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_10",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9071,
+          "body": "{\n\tr10, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_2",
+      "id": 154,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_2",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9047,
+          "body": "{\n\tr2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_3",
+      "id": 155,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_3",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9050,
+          "body": "{\n\tr3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_4",
+      "id": 156,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_4",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9053,
+          "body": "{\n\tr4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_5",
+      "id": 157,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_5",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9056,
+          "body": "{\n\tr5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_6",
+      "id": 158,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_6",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9059,
+          "body": "{\n\tr6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_7",
+      "id": 159,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_7",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9062,
+          "body": "{\n\tr7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_8",
+      "id": 160,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_8",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9065,
+          "body": "{\n\tr8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9068,
+          "body": "{\n\tr9, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rate_r_9",
+      "id": 161,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rate_r_9",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [],
+      "code_note": "后台 DepositNewTwo 查询 rate_r_9，但 r9 分支比较的是 rate_r_8；建记录不能修正此代码问题。"
+    },
+    {
+      "key_name": "recommend",
+      "id": 162,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "recommend",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "BuyTwo",
+          "line": 9113
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "BuyTwo",
+          "line": 9123,
+          "body": "{\n\trecommend, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "recommend_two",
+      "id": 163,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "recommend_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6779,
+          "body": "{\n\trecommendTwoRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "recommend_two_sub",
+      "id": 164,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "recommend_two_sub",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminDailyReward",
+          "line": 6740
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminDailyReward",
+          "line": 6782,
+          "body": "{\n\trecommendTwoRateSub, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rent_rate_one",
+      "id": 165,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rent_rate_one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "RentLand",
+          "line": 7421
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1076,
+          "body": "{\n\trentRateOne, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "RentLand",
+          "line": 7432,
+          "body": "{\n\trentRateOne, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rent_rate_three",
+      "id": 166,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rent_rate_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "RentLand",
+          "line": 7421
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1079,
+          "body": "{\n\trentRateThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "rent_rate_two",
+      "id": 167,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "rent_rate_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "RentLand",
+          "line": 7421
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1082,
+          "body": "{\n\trentRateTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "reward_land",
+      "id": 168,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "reward_land",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminLandReward",
+          "line": 6274
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminLandReward",
+          "line": 6281,
+          "body": "{\n\trewardLand, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "reward_stake_rate",
+      "id": 169,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "reward_stake_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 839,
+          "body": "{\n\trewardStakeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "s_rate",
+      "id": 170,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "s_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySeven",
+          "line": 6124
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "LandPlayTwo",
+          "line": 4776,
+          "body": "{\n\tsRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "LandPlaySix",
+          "line": 5666,
+          "body": "{\n\tsRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "LandPlaySeven",
+          "line": 6135,
+          "body": "{\n\tsRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "self_sub",
+      "id": 171,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "self_sub",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySeven",
+          "line": 6124
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "LandPlayTwo",
+          "line": 4779,
+          "body": "{\n\tselfSub, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "LandPlaySix",
+          "line": 5669,
+          "body": "{\n\tselfSub, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "LandPlaySeven",
+          "line": 6138,
+          "body": "{\n\tselfSub, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "sell_fee_rate",
+      "id": 172,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "sell_fee_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Buy",
+          "line": 6387
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "Buy",
+          "line": 3703
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1070,
+          "body": "{\n\tsellFeeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "Buy",
+          "line": 6400,
+          "body": "{\n\tfeeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 857,
+          "body": "{\n\tsellFeeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "Buy",
+          "line": 3713,
+          "body": "{\n\tfeeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "sell_land",
+      "id": 173,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "sell_land",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Sell",
+          "line": 6941
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "Sell",
+          "line": 6950,
+          "body": "{\n\tsellLand, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "stake_ispay_five",
+      "id": 174,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_ispay_five",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "stake_ispay_four",
+      "id": 175,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_ispay_four",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "stake_ispay_one",
+      "id": 176,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_ispay_one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1134,
+          "body": "{\n\tstakeIspayOne, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "stake_ispay_three",
+      "id": 177,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_ispay_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "stake_ispay_two",
+      "id": 178,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_ispay_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "stake_over_rate",
+      "id": 179,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_over_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGetPlay",
+          "line": 8535
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "StakeGetPlay",
+          "line": 4970
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1067,
+          "body": "{\n\tstakeOverRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGetPlay",
+          "line": 8560,
+          "body": "{\n\tstakeOverRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 854,
+          "body": "{\n\tstakeOverRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "StakeGetPlay",
+          "line": 4979,
+          "body": "{\n\tstakeOverRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "stake_price",
+      "id": 180,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_price",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "OpenBox",
+          "line": 4166
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGit",
+          "line": 7208
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1179,
+          "body": "{\n\tstakePrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "OpenBox",
+          "line": 4192,
+          "body": "{\n\tstakePrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGit",
+          "line": 7219,
+          "body": "{\n\tstakePrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9036,
+          "body": "{\n\tpriceOpen, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9104,
+          "body": "{\n\tstakePrice, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "stake_price_on",
+      "id": 181,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_price_on",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "OpenBox",
+          "line": 4166
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGit",
+          "line": 7208
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1182,
+          "body": "{\n\tstakePriceOn, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "OpenBox",
+          "line": 4195,
+          "body": "{\n\tstakePriceOn, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "StakeGit",
+          "line": 7222,
+          "body": "{\n\tstakePriceOn, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9040,
+          "body": "{\n\tpriceOpenUse, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9107,
+          "body": "{\n\tstakePriceOn, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "stake_rate_new",
+      "id": 182,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_rate_new",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGit",
+          "line": 7208
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "StakeGit",
+          "line": 7225,
+          "body": "{\n\tstakeRateNew, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "stake_recommend_one",
+      "id": 183,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_recommend_one",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "stake_recommend_three",
+      "id": 184,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_recommend_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "stake_recommend_two",
+      "id": 185,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "stake_recommend_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "sys_content",
+      "id": 186,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "sys_content",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "文本"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1085,
+          "body": "{\n\tsysContent = vConfig.Value\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "sys_content_e",
+      "id": 187,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "sys_content_e",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "文本"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1088,
+          "body": "{\n\tsysContentE = vConfig.Value\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "three",
+      "id": 188,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1130,
+          "body": "{\n\tthree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "three_rate",
+      "id": 189,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "three_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 2692
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 3424
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "LandPlayTwo",
+          "line": 2710,
+          "body": "{\n\tthreeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "LandPlaySix",
+          "line": 3442,
+          "body": "{\n\tthreeRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "two",
+      "id": 190,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1127,
+          "body": "{\n\ttwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "two_rate",
+      "id": 191,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "two_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 4749
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 5635
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "LandPlayTwo",
+          "line": 2692
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "LandPlaySix",
+          "line": 3424
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergameadmin",
+          "function": "LandPlayTwo",
+          "line": 2706,
+          "body": "{\n\ttwoRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "LandPlaySix",
+          "line": 3438,
+          "body": "{\n\ttwoRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "two_sub_reward",
+      "id": 192,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "two_sub_reward",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "LandPlayFour",
+          "line": 5356
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "LandPlayFour",
+          "line": 5366,
+          "body": "{\n\ttwoSubRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_1",
+      "id": 193,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_1",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1149,
+          "body": "{\n\tv1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1646,
+          "body": "{\n\tv1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5507,
+          "body": "{\n\tv1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9074,
+          "body": "{\n\tv1, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_10",
+      "id": 194,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_10",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1176,
+          "body": "{\n\tv10, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1673,
+          "body": "{\n\tv10, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5534,
+          "body": "{\n\tv10, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9101,
+          "body": "{\n\tv10, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_2",
+      "id": 195,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_2",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1152,
+          "body": "{\n\tv2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1649,
+          "body": "{\n\tv2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5510,
+          "body": "{\n\tv2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9077,
+          "body": "{\n\tv2, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_3",
+      "id": 196,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_3",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1155,
+          "body": "{\n\tv3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1652,
+          "body": "{\n\tv3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5513,
+          "body": "{\n\tv3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9080,
+          "body": "{\n\tv3, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_4",
+      "id": 197,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_4",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1158,
+          "body": "{\n\tv4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1655,
+          "body": "{\n\tv4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5516,
+          "body": "{\n\tv4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9083,
+          "body": "{\n\tv4, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_5",
+      "id": 198,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_5",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1161,
+          "body": "{\n\tv5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1658,
+          "body": "{\n\tv5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5519,
+          "body": "{\n\tv5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9086,
+          "body": "{\n\tv5, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_6",
+      "id": 199,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_6",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1164,
+          "body": "{\n\tv6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1661,
+          "body": "{\n\tv6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5522,
+          "body": "{\n\tv6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9089,
+          "body": "{\n\tv6, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_7",
+      "id": 200,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_7",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1167,
+          "body": "{\n\tv7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1664,
+          "body": "{\n\tv7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5525,
+          "body": "{\n\tv7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9092,
+          "body": "{\n\tv7, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_8",
+      "id": 201,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_8",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1170,
+          "body": "{\n\tv8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1667,
+          "body": "{\n\tv8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5528,
+          "body": "{\n\tv8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9095,
+          "body": "{\n\tv8, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "v_9",
+      "id": 202,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "v_9",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserRecommend",
+          "line": 1627
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminUserList",
+          "line": 5487
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "DepositNewTwo",
+          "line": 9001
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1173,
+          "body": "{\n\tv9, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "UserRecommend",
+          "line": 1670,
+          "body": "{\n\tv9, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "AdminUserList",
+          "line": 5531,
+          "body": "{\n\tv9, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "DepositNewTwo",
+          "line": 9098,
+          "body": "{\n\tv9, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "win_rate",
+      "id": 203,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "win_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "StakeGetPlay",
+          "line": 8535
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "StakeGetPlay",
+          "line": 8556,
+          "body": "{\n\twinRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "withdraw_amount_max",
+      "id": 204,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_amount_max",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 5214
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1036,
+          "body": "{\n\twithdrawMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 830,
+          "body": "{\n\twithdrawMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "Withdraw",
+          "line": 5227,
+          "body": "{\n\twithdrawMax, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "withdraw_amount_max_three",
+      "id": 205,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_amount_max_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1115,
+          "body": "{\n\twithdrawMaxThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9461,
+          "body": "{\n\twithdrawMaxThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "withdraw_amount_max_two",
+      "id": 206,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_amount_max_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数",
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1043,
+          "body": "{\n\twithdrawMaxTwo, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9468,
+          "body": "{\n\twithdrawMaxTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ],
+      "code_note": "同一个键分别被 ParseUint 和 ParseFloat 读取；填写整数字符串才能同时满足当前两种读取。"
+    },
+    {
+      "key_name": "withdraw_amount_min",
+      "id": 207,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_amount_min",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 799
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 5214
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1033,
+          "body": "{\n\twithdrawMin, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "UserInfo",
+          "line": 827,
+          "body": "{\n\twithdrawMin, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergameadmin",
+          "function": "Withdraw",
+          "line": 5224,
+          "body": "{\n\twithdrawMin, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "withdraw_amount_min_three",
+      "id": 208,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_amount_min_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1112,
+          "body": "{\n\twithdrawMinThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9458,
+          "body": "{\n\twithdrawMinThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "withdraw_amount_min_two",
+      "id": 209,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_amount_min_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数",
+        "无符号整数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1040,
+          "body": "{\n\twithdrawMinTwo, _ = strconv.ParseUint(vConfig.Value, 10, 64)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9465,
+          "body": "{\n\twithdrawMinTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ],
+      "code_note": "同一个键分别被 ParseUint 和 ParseFloat 读取；填写整数字符串才能同时满足当前两种读取。"
+    },
+    {
+      "key_name": "withdraw_rate",
+      "id": 210,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_rate",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "当前代码仅查询，未实际解析，值类型待确认"
+      ],
+      "usage_status": "仅出现在活动查询参数中",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": []
+    },
+    {
+      "key_name": "withdraw_rate_three",
+      "id": 211,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_rate_three",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "UserInfo",
+          "line": 965
+        },
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "UserInfo",
+          "line": 1109,
+          "body": "{\n\tvTwoRate, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        },
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9476,
+          "body": "{\n\twithdrawRateThree, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    },
+    {
+      "key_name": "withdraw_rate_two",
+      "id": 212,
+      "id_basis": "空库新分配，非历史编号",
+      "name": "withdraw_rate_two",
+      "name_basis": "暂用配置键，非历史中文名称",
+      "historical_value": null,
+      "value_basis": "只能确认配置键，无法从当前代码恢复历史配置值",
+      "read_types": [
+        "小数"
+      ],
+      "usage_status": "有活动读取分支",
+      "query_sites": [
+        {
+          "repo": "ppothergame",
+          "file": "/Users/wangjiabao/Documents/ppothergame/internal/biz/app.go",
+          "function": "Withdraw",
+          "line": 9435
+        },
+        {
+          "repo": "ppothergameadmin",
+          "file": "/Users/wangjiabao/Documents/ppothergameadmin/internal/biz/app.go",
+          "function": "AdminGetConfig",
+          "line": 6353
+        }
+      ],
+      "read_sites": [
+        {
+          "repo": "ppothergame",
+          "function": "Withdraw",
+          "line": 9472,
+          "body": "{\n\twithdrawRateTwo, _ = strconv.ParseFloat(vConfig.Value, 10)\n}"
+        }
+      ]
+    }
+  ]
+}

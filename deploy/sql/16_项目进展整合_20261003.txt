@@ -1,0 +1,201 @@
+PP游戏项目：两个聊天的最新进展整合
+整理日期：2026-10-03（Asia/Dubai）
+
+一、来源与当前范围
+本聊天：核对聊天数据恢复方案与 SQL。
+另一聊天：核对游戏服务重建配置，thread=01a0fb27-a9b4-7911-af7d-ddc45b3b2d96。
+分享快照：https://chatgpt.com/s/cx_6ac0c97d03488191a7277504db4a2f93
+分享页从最初恢复需求到最后充值闭环说明已完整读取；应用内该聊天的全部可读turn也已分页读取。
+本次以两份聊天的最终决定为准，再核对当前本地文件。没有连接Ubuntu、MySQL或链上账户执行操作。
+用户负责选择实际启用的充值、提现、分红接口及宝塔定时任务；不按接口可能闲置删表、删配置或自动修改业务代码。
+
+二、四个工程的当前本地基线
+App服务端：/Users/wangjiabao/Documents/ppothergame
+main，f29548c52fb2805ac8f657717f9ca04209e0d40a。
+后台服务端：/Users/wangjiabao/Documents/ppothergameadmin
+main，f5d6e8cb8ae2430e03a9012fbb0ca764f8e7166d。
+App前端：/Users/wangjiabao/Documents/farm-game5
+pp，4efc6faadf88eba5fe04da9e9f91f01f79d77cae。
+管理前端：/Users/wangjiabao/Documents/game-admin
+main，40a8a2d8c1bb0637603bc2ee019c3eb2549f604d。
+这四个提交本次已在本地核对。本次没有fetch，不能把它们表述为实时远端最新提交。
+两个Go项目都声明go 1.22；当前本地配置使用othergame，App HTTP 6222、后台HTTP 6220。
+服务端Go代码没有本地修改；App服务端仅deploy为未跟踪生成文件。两个前端和后台服务端工作区干净。
+SQL尚未提交Git；git clone不会把本机生成的deploy文件带到Ubuntu。
+
+三、SQL以最终版本为准
+推荐空库入口：08_restore_all_for_baota.sql。
+当前实际文件：38张表、386个字段、38个自增主键、348个非自增字段都有非NULL默认值。
+user表60个字段。user.address为完整列唯一索引uq_user_address；默认空串下最多一条空地址。
+共有93个二级索引：91普通、2唯一（user.address、random_seeds.scene）。历史复核新增63个普通查询索引。
+相较这里最初385字段版本，新增stake_git.sell_amount；两份模型没有此列，但两端stakeGit写入代码存在。
+sell_amount采用DECIMAL(65,20) NOT NULL DEFAULT 0，属于本次兼容推定，不能称为原库DDL确认。
+历史静态复核记录372个数据库函数、509处数据库读写；原始依据和调用链分别在11、12、13文件。
+凡无法确认原定义、原值或原约束的，都按用户定义标为“有争议”。
+全部非自增字段具体默认值、user.address唯一约束来自另一聊天后续用户要求，覆盖这里早先的版本描述。
+08的149条条件INSERT包括29条基础记录和120项config模板；仍有120个SET @cfg_变量为NULL，原样不插config。
+固定config ID：16 box_start、17 box_end、18 box_amount、19 box_num、20 box_max、21 box_sell_num、26 u_price。
+其余ID从100起新分配，name暂用key_name；历史ID、中文名称和业务值未恢复。
+管理前端只把ID66、67当作文本输入项，其历史key_name不能确定，不擅自重新映射。
+初始化已包含10类种子、10级土地、5类道具、3条random_seeds、1条stake_get_total空池。
+种子调试范围1/3，实际整数随机结果1或2；成熟300秒，权重1。
+土地调试产出参数100，按现有代码直接乘种子基值；期限30天是占位。
+道具类型11化肥、12水、13手套、14除虫剂、15铲子；当前App盲盒道具池读取被注释。
+管理员账号未创建；当前后台登录比较输入密码的32位小写十六进制MD5。
+现有初始化仅补缺失记录，改变SET后重跑不会覆盖已有数据。
+
+四、空库和已导入旧版的处理
+尚未导入：填写08中实际启用功能的config值，调整正式商品参数，在宝塔选择目标空库导入08。
+08不写死数据库名，不使用SOURCE，已包含事件和只读检查。
+已导入旧版：按缺项选择09补sell_amount、10补查询索引、14补默认值、15补地址唯一约束。
+15有重复地址时报告BLOCKED，不自动删用户数据。补丁需要具备相应DDL权限。
+CREATE TABLE IF NOT EXISTS不升级已有表；重跑08不能替代这些补丁。
+五分钟事件ev_refresh_land_count按status<=4且limit_date>UNIX_TIMESTAMP()统计土地，回填user.land_count。
+事件和宝塔每分钟充值扫描是两套任务。事件要运行仍需event_scheduler=ON。
+旧game-mysql-restore-20261002.zip缺08~15，且其中部分文件与当前磁盘内容不同。
+本次新版game-mysql-restore-latest-20261003.zip包含当前完整sql目录及本整合记录。
+
+五、前后端静态对应结论
+另一聊天逐项对照App前端50项请求、管理前端46项请求，路径和HTTP方法均与当前Go路由对应。
+App接口前缀/api/app_server，后台/api/admin_dhb。
+App生产API目前VITE_API_URL=https://www.ppflsc.com，链ID为56。
+前端开发代理和管理前端仍保留playgameframe/playgamefrane等旧域名，部署时需要选定并统一。
+App打包路径/game/；管理前端/adminsystem。
+VITE_环境变量打包时进入前端文件，改变.env后需要重新打包。
+公告写admin_message.content/content_two，status=0；删除为status=1逻辑删除。
+管理页面要求中英文都填写，App展示最新未删除公告；表字符集utf8mb4。
+土地期限/出租参数、部分道具效果、种子名称等不在现有后台编辑覆盖范围内，按需SQL更新。
+
+六、用户已确认的USDT充值设计
+前端approve代币授权 -> 调用BuySomething.buy(num) -> 合约追加地址和金额记录 -> 宝塔每分钟调用AdminDepositUsdt -> 后台扫描并增加游戏USDT余额 -> 写eth_record_two。
+扫描从eth_record_two最大的last继续；普通入账和CreateEthTwo处于同一数据库事务，部分推荐奖励在后续事务中处理。
+目前前端VITE_BUY_USDT=0x95EE6257Ce84a832FB4d08945EeedC8dbD766666。
+后台AdminDepositUsdt扫描0xD0c62c94F94c70E5f10169F59B0a5C3f84dAe800。
+ISPAY前端VITE_BUY_ISPAY=0x548561aA42a511CFCBF62C562755174c5Fa14deB；后台AdminDeposit扫描0x623Cf8DF68CD3AD201Ac925c0951694F6436E87b。
+两组地址不一致；最终采用哪一个合约未决定，不能擅自选择或认定线上版本。
+前端USDT/ISPAY充值入口目前都提示“暂未开放”，进入充值页面的step赋值被注释。
+个人弹窗仍调用未配置的USDT2 allowance查询，VITE_USDT2、VITE_BUY_USDT2缺失。
+当前USDT buy参数为输入金额取整数；ISPAY为金额乘1000再取整数，需对齐选定合约单位。
+早先找到的contracts/BuySomething.sol使用Ethereum USDT、6位精度；不能用于当前BSC配置。
+本次继续定位到同一项目contracts/bsc/BuySomething.sol：BSC USDT、18位精度、最低5。
+后台USDT扫描过滤最低10；尚未调整。未对当前前端USDT地址完成链上字节码匹配验证。
+
+七、充值恢复待处理事项
+批内每次成功记录写Last=userLength（整批末尾）。早期失败、用户不存在或金额过小的记录，可能被后续成功推进进度而漏扫。
+当前未见按链上记录序号的持久去重或扫描互斥；两个扫描重叠可能重复入账。
+不能直接给last加唯一索引，同一批合法记录会拥有相同last。
+本次额外确认：eth_record_two空表时GetEthUserRecordLastTwo返回0；沿用旧合约会从索引0读取历史记录。
+是否重放历史充值、采用新的充值合约或设置经核对的恢复起点，需在启动扫描前决定。本次没有写入起点或修改余额。
+流程设计闭环不等于失败补扫、任务重叠和历史重放问题已经解决。
+
+八、用户已接受的范围及其他实际状态
+ammount_usdt拼写问题用户明确选择暂不处理；保持amount_usdt正确列，不另建拼错字段，不主动修改该代码。
+这段竞拍退款路径在代码中存在调用链，暂不使用不代表已修复；启用相关功能时再处理。
+CreateUser当前仍明确user.AmountUsdt=100；数据库默认0不能改变这个行为，相关Go补丁没有应用到这两份本地仓库。
+rate_r_9读取分支比较rate_r_8的问题仍存在；只补配置记录不能修正。
+另一聊天曾把数据库密码输出到工具结果，应替换此前曝光的密码；本文件和新版包不记录密码。
+本聊天已给出Ubuntu wget安装Go、git clone和go build命令；尚未看到服务器安装、编译、数据库导入或启动结果。
+两端启动前都要有工作目录下log目录，代码打开./log/sql.log；从项目根运行时显式使用-conf ./configs。
+Nginx、原宝塔任务及真正上线入口未在本次操作；用户自行选择配置。
+
+九、本次整合验证与下一步
+本次重新检查当前SQL数量、全部非自增默认值、user地址唯一约束、sell_amount及08与分文件一致性。
+现有SHA256清单核对通过；发现旧ZIP缺文件后重新打包，逐文件比对并校验ZIP完整性。
+未重复进行全部509处读写分析；该数字来自另一聊天的已保存复核报告。
+所有数据库证据仍是源码静态核对、历史离线解析和内存模拟，没有真实MySQL导入/EXPLAIN/接口联调通过的证据。
+下一步按当前实际阶段推进：先确认服务器编译与SQL导入结果，补业务参数和管理员，再联调页面；充值先统一链、合约、参数单位和扫描起点，再验证单笔到账及失败重试。
+
+十、第一版前端、部署钱包及ISPAY补充核对（2026-10-03）
+用户最新要求：只交付完整SQL，不需要重新制作压缩包；空库入口仍是08_restore_all_for_baota.sql。
+App项目：/Users/wangjiabao/Documents/farm-game5，pp分支，基于4efc6fa。
+App执行npm ci、npm run build成功；输出/Users/wangjiabao/Documents/farm-game5/dist；访问前缀/game/。
+原pp/main都缺menu_1.png至menu_8.png。用户确认使用现有素材后，只在Game.vue替换8处菜单图引用，去掉重复文字叠层。
+采用已有中文/英文菜单素材；8种菜单的两套素材都已进入产物。现有菜单点击功能保留。
+管理前端：/Users/wangjiabao/Documents/game-admin，main分支，基于40a8a2d。
+管理前端执行npm install --legacy-peer-deps、npm run build:prod成功；输出/Users/wangjiabao/Documents/game-admin/dist；访问前缀/adminsystem/。
+两个首页引用的全部资源存在；仅有构建体积和旧依赖提示。尚未完成服务器页面、登录和真实充值验收。
+本版保留当前环境变量。App API=https://www.ppflsc.com；管理前端生产API=https://www.playgamefrane.com/。
+充值合约部署后需要更新环境变量并重新编译；上述API域名也需根据实际服务器确定。
+
+新部署钱包地址：0xf39378039D6a422bEF8D88cEa08D727618Ae624a；用于BSC主网（链ID56），原生BNB支付gas。
+公有元信息：/Users/wangjiabao/Documents/ppothergame/deploy/recharge-deployer-20261003.json。
+加密keystore和解锁文件分别保存在本机.local/share/pp-game-deployment/private与secrets受限目录，文件权限0600。
+已验证从保存的加密文件恢复出的地址一致；没有发送交易。本次链上查询余额为0 BNB，后续以部署前实时查询为准。
+等待用户转入BNB并提供收款地址及比例，再按最终方案准备和执行部署。
+
+ISPAY代币：VITE_ISPAY=0xBF9b0594E110C381F2606961C78641a194999999。
+前端授权spender/当前充值合约：VITE_BUY_ISPAY=0x548561aA42a511CFCBF62C562755174c5Fa14deB。
+对应BSC源码：/Users/wangjiabao/Documents/ms_token_v12_hardhat_all_contracts/hardhat_deploy_v12/contracts/bsc/BuyBurn.sol。
+源码变量虽叫usdt，实际地址是上述ISPAY；buy(num)将num*10^15最小单位transferFrom到0x000000000000000000000000000000000000dEaD。
+随后追加users和usersAmount，后台AdminDeposit扫描记录，通过DepositNewNew入账并写eth_record。
+前端输入乘1000取整数，合约乘10^15；本次BSC只读查询确认代币decimals=18，当前充值合约usdt()为上述ISPAY地址。
+输入1 ISPAY -> buy(1000) -> 转入黑洞1 ISPAY；扫描所得num再除1000恢复输入金额。
+这属于转入黑洞地址，未调用代币_burn，不能据此认定totalSupply减少。
+后台AdminDeposit两处仍使用0x623Cf8DF68CD3AD201Ac925c0951694F6436E87b，与当前前端充值地址不同。
+新合约部署后需要统一前端和后台扫描地址，检查新扫描起点；本次未修改Go代码或开放充值入口。
+
+十一、BuyBurn实际部署完成（2026-10-03）
+用户明确要求先部署BuyBurn；使用本聊天生成的钱包，不使用Hardhat .env中旧账户。
+网络：BSC主网，链ID56；部署钱包0xf39378039D6a422bEF8D88cEa08D727618Ae624a；部署前余额0.005 BNB，nonce=0。
+新ISPAY充值合约：0x033aADea05aFa0a2c05850534702846F530f6FF2。
+部署交易：0x4d94b67bf0bd29b057a8b0f0f823ba02c1dbd2ad4bc46f0311eccf96b4620ccb；区块125463887；回执status=1。
+代币仍为0xBF9b0594E110C381F2606961C78641a194999999，decimals=18；接收地址仍为0x000000000000000000000000000000000000dEaD；buy参数计量保持num*10^15。
+实际gas=460395，gas价格0.05 gwei，手续费0.00002301975 BNB，钱包剩余0.00497698025 BNB。
+当前源码与编译输入一致；创建代码和运行时代码均匹配；usdt()返回目标ISPAY，初始getUserLength()=0。
+主RPC与Defibit RPC交叉核对通过；二次核对时207个确认，finalized区块125464091已覆盖部署区块。
+部署报告：/Users/wangjiabao/Documents/ppothergame/deploy/buyburn-bsc-20261003.json；部署脚本：/Users/wangjiabao/Documents/ms_token_v12_hardhat_all_contracts/hardhat_deploy_v12/scripts/deploy-buy-burn-keystore.cjs。
+脚本默认只读预检，--broadcast才发送；已签交易保存在受限目录，重试复用相同交易，不重复部署。
+本次完成链上部署，没有修改App .env、Go扫描地址、充值开放状态或重编译dist。
+后续VITE_BUY_ISPAY及后台AdminDeposit扫描地址应统一为上述新合约；VITE_ISPAY代币地址保持不变。
+USDT BuySomething尚未部署，仍等待最终收款地址及比例。
+
+十二、USDT 部署、新前端及完整参数确认表单（2026-10-03，当前最新状态）
+用户明确授权 USDT 两个收款钱包按 99.5% 和 0.5% 分配，要求部署、替换两组前端合约并重新编译。后端由用户自己手动调整。
+最终 BSC BuySomething 源码仅将原四笔分配改为两笔：
+0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1，995/1000；
+0xa33b9A19E702fb08e5744432Ac328A24DCc90235，5/1000。
+代币为 BSC USDT 0x55d398326f99059fF775485246999027B3197955，部署前核实 decimals=18；buy(num) 计量为 num*10^18，最低 num=5。
+本地 Hardhat 模拟验证 5、10、1000 USDT 的两笔分配，低于5拒绝，授权不足失败后余额及记录回滚。没有执行真实用户充值。
+
+新 USDT 充值合约：0xC769aDC38a427b569142A80ff5605f2F969db61E。
+部署交易：0x1f5dd1c4713c0d32a2f8a5dcd085b7cd72dc60281df0d375215b87fa9ae1fd59；区块125469035；回执status=1。
+部署钱包仍为 0xf39378039D6a422bEF8D88cEa08D727618Ae624a，nonce=1。
+实际gas=515037，gas价格0.05 gwei，手续费0.00002575185 BNB，部署后查询余额0.0049512284 BNB。
+源码重新编译成功，创建代码及运行时代码匹配。第二个 RPC 独立核对通过，848个确认，finalized区块125469880已覆盖部署区块。
+报告：/Users/wangjiabao/Documents/ppothergame/deploy/buysomething-bsc-20261003.json。
+前面的“等待分配比例”“尚未部署”“前端旧合约地址”等描述是历史阶段，本节覆盖这些旧状态。
+
+App .env 已更新 VITE_BUY_USDT=上述新USDT合约，VITE_BUY_ISPAY=0x033aADea05aFa0a2c05850534702846F530f6FF2。
+App npm run build 再次成功；产物 /Users/wangjiabao/Documents/farm-game5/dist，访问前缀 /game/。
+新产物包含两组新地址，不包含两组旧充值地址。USDT、ISPAY代币地址及App API域名未变化。
+管理前端 npm run build:prod 再次成功；产物 /Users/wangjiabao/Documents/game-admin/dist，访问前缀 /adminsystem/。
+两份产物首页引用资源检查通过。当前App API为 https://www.ppflsc.com，管理API为 https://www.playgamefrane.com/。
+App充值入口仍显示暂未开放；本次没有修改后端Go源码、服务器任务、数据库余额或线上网站。
+
+后端手动修改：ppothergameadmin/internal/service/app.go 的 AdminDepositUsdt 2319、2336 行换为新USDT合约；对应biz DepositNewTwo。
+AdminDeposit 2220、2237 行换为新ISPAY合约；对应biz DepositNewNew，num除1000。
+AdminDepositUsdt 2368行仍最低10，与合约最低5不一致。当前5~9 USDT合约可支付、后端会跳过，开放前需要对齐。
+新合约从记录序号0开始；必须分别核对eth_record_two和eth_record的扫描起点，不能盲目沿用旧合约last。
+
+逐字段确认表单：/Users/wangjiabao/Documents/ppothergame/deploy/待确认参数表单_20261003.html。
+同内容JSON：/Users/wangjiabao/Documents/ppothergame/deploy/待确认参数表单_20261003.json。
+Excel：/Users/wangjiabao/Documents/ppothergame/deploy/outputs/01a0fb64-2725-7363-bf84-c8e9bf3f28d4/待确认参数表单_20261003.xlsx。
+290项＝config120、种子50、土地60、道具40、其他记录20。每项包含记录定位、字段、当前占位值、用途、方法、修改入口及注意事项。
+config静态识别120项，其中104有读取分支，16仅出现在查询列表。与原配置清单逐项比对一致。
+确认表覆盖完整SQL内全部270个可填SET参数，额外列出管理员、公告、随机池、资金池、配置ID及扫描进度。
+同时列出11项待改代码和运行配置、38张表的初始化处理说明。填写表单不会连接或修改数据库。
+HTML完成语法、数据一致性、筛选、填写、导出入口与本地保存的模拟DOM验证。Excel验证了下拉状态、汇总变化、公式错误扫描、工作表预览及导出字段。
+
+完整SQL仍为 /Users/wangjiabao/Documents/ppothergame/deploy/sql/08_restore_all_for_baota.sql，本次未改变DDL及默认种子/土地/道具内容。
+其中120项config仍为NULL跳过插入，正式业务值由用户参照表单确定。已有记录需要按定位字段UPDATE，改变SET后重跑不会覆盖已有值。
+保留CreateUser赠送100、rate_r_9分支及ammount_usdt等已发现的代码状态，在表单注明而未擅自修改。
+没有真实MySQL导入、服务器部署、用户登录或实际充值入账通过的证据。这些联调需在用户手动改后端和参数后进行。
+
+十三、管理后台域名确认及重新编译（2026-10-03，覆盖此前旧域名描述）
+用户确认管理后台也使用 https://www.ppflsc.com。
+game-admin/.env.production 的 VUE_APP_BASE_API 已改为 https://www.ppflsc.com/。
+管理前端重新执行生产构建成功，仍有两项资源体积提示。
+最新产物仍为 /Users/wangjiabao/Documents/game-admin/dist，访问前缀 /adminsystem/。
+核对产物包含新API域名，不包含旧playgamefrane/playgameframe域名；首页13处本地资源引用均存在。
+App与管理后台的生产API现在均为www.ppflsc.com；本节覆盖前面以及旧参数表单中的管理后台旧域名描述。
+本次只修改管理前端生产环境配置并重新编译，没有上传服务器或修改后端。

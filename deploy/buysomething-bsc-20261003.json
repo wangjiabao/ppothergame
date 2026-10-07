@@ -1,0 +1,95 @@
+{
+  "client_date": "2026-10-03",
+  "contract": "BuySomething",
+  "source": "contracts/bsc/BuySomething.sol",
+  "status": "deployed_verified_two_rpcs_finalized",
+  "chain_id": 56,
+  "rpc": "https://bsc-dataseed.bnbchain.org",
+  "deployer": "0xf39378039D6a422bEF8D88cEa08D727618Ae624a",
+  "token": "0x55d398326f99059fF775485246999027B3197955",
+  "token_name": "Tether USD",
+  "token_symbol": "USDT",
+  "token_decimals": 18,
+  "recipients": [
+    {
+      "address": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1",
+      "parts": 995
+    },
+    {
+      "address": "0xa33b9A19E702fb08e5744432Ac328A24DCc90235",
+      "parts": 5
+    }
+  ],
+  "recipient_denominator": 1000,
+  "amount_unit": "num * 10^18; buy(1) transfers 1 USDT; minimum num=5",
+  "nonce": 1,
+  "contract_address": "0xC769aDC38a427b569142A80ff5605f2F969db61E",
+  "estimated_gas": "520292",
+  "gas_limit": "624351",
+  "gas_price_wei": "50000000",
+  "balance_before_wei": "4976980250000000",
+  "maximum_fee_wei": "31217550000000",
+  "compiler": "0.8.26+commit.8a97fa7a.Emscripten.clang",
+  "compiler_settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": true,
+    "evmVersion": "cancun",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    }
+  },
+  "creation_code_hash": "0xeb31592f8a2ca941e28afd44d4e0c6ea504bd32e486fe830d246b3c3b0662db7",
+  "runtime_code_hash": "0x3ba194fc1055e68f8834f246417ca5af478146614a44e807ffa50c2ef9459a7c",
+  "transaction_hash": "0x1f5dd1c4713c0d32a2f8a5dcd085b7cd72dc60281df0d375215b87fa9ae1fd59",
+  "block_number": 125469035,
+  "block_hash": "0x7fd934e307ecdcf10457a0a573ba0e1f063f417ca1ea57e95445ed87a61df430",
+  "receipt_status": 1,
+  "gas_used": "515037",
+  "effective_gas_price_wei": "50000000",
+  "actual_fee_wei": "25751850000000",
+  "confirmations": 11,
+  "balance_after_wei": "4951228400000000",
+  "verification": {
+    "runtime_bytecode_matches": true,
+    "creation_bytecode_matches": true,
+    "token_address_matches": true,
+    "initial_user_length": 0
+  },
+  "independent_verification": {
+    "rpc": "https://bsc-dataseed1.defibit.io",
+    "chain_id": 56,
+    "receipt_status": 1,
+    "block_hash_matches": true,
+    "runtime_bytecode_matches": true,
+    "creation_bytecode_matches": true,
+    "configured_token": "0x55d398326f99059fF775485246999027B3197955",
+    "user_length": 0,
+    "head_block": 125469882,
+    "confirmations": 848,
+    "finalized_block": 125469880,
+    "finalized_covers_deployment": true
+  },
+  "local_split_test": {
+    "amounts_usdt": [
+      5,
+      10,
+      1000
+    ],
+    "ratio_995_5_passed": true,
+    "minimum_and_failed_transfer_rollback_passed": true
+  }
+}

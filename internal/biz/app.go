@@ -6,11 +6,6 @@ import (
 	"encoding/json"
 	"fmt"
 	pb "game/api/app/v1"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/go-kratos/kratos/v2/log"
 	"math"
 	"math/big"
 	rand2 "math/rand"
@@ -19,6 +14,12 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/go-kratos/kratos/v2/errors"
+	"github.com/go-kratos/kratos/v2/log"
 )
 
 type Pagination struct {
@@ -4682,8 +4683,8 @@ func (ac *AppUsecase) LandPlayOne(ctx context.Context, address string, req *pb.L
 		err = ac.userRepo.CreateNotice(
 			ctx,
 			user.ID,
-			"您种植了一个产量为"+fmt.Sprintf("%.2f", seed.OutMaxAmount)+"ISPAY的种子",
-			"You've plant a seed with output "+fmt.Sprintf("%.2f", seed.OutMaxAmount)+" ISPAY",
+			"您种植了一个产量为"+fmt.Sprintf("%.2f", seed.OutMaxAmount)+"USDT的种子",
+			"You've plant a seed with output "+fmt.Sprintf("%.2f", seed.OutMaxAmount)+" USDT",
 		)
 		if nil != err {
 			return err

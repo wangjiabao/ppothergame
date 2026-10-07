@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>游戏项目 · 待确认参数表单</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;color:#21312e;background:#f3f6f4;font-size:14px}*{box-sizing:border-box}body{margin:0}header{padding:30px 32px 22px;background:#fff;border-bottom:1px solid #dce6df}h1{font-size:28px;margin:0 0 8px;letter-spacing:-.5px}h2{font-size:18px;margin:0 0 12px}p{margin:6px 0;line-height:1.65}.muted{color:#60766a}.tag{font-size:12px;display:inline-block;padding:3px 7px;border-radius:5px;background:#edf4ef;color:#325c47;margin:3px 3px 3px 0}.critical{background:#fff0d4;color:#805300}.optional{background:#eef0f5;color:#586579}.cards{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.card{background:#f4f8f5;padding:13px 18px;min-width:150px;border:1px solid #e1eae4;border-radius:8px}.card strong{font-size:24px;margin-right:9px}main{padding:20px 24px 36px}.notice{background:#fff8e9;border:1px solid #ecdcb5;padding:14px 18px;border-radius:8px;margin-bottom:18px;line-height:1.65}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}.toolbar input{width:min(450px,100%)}input,select,button{font:inherit;border:1px solid #cddbd1;border-radius:6px;padding:9px 11px;background:#fff;color:inherit}input:focus,select:focus{outline:2px solid #98c0a5;outline-offset:1px}button{cursor:pointer}button:hover{background:#e9f2eb}.primary{background:#1c6847;color:#fff;border-color:#1c6847}.primary:hover{background:#155338}nav{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}nav button[aria-selected=true]{background:#1c6847;color:white;border-color:#1c6847}.summary{margin-bottom:12px;display:flex;justify-content:space-between;gap:12px;align-items:center}.table-wrap{overflow:auto;border:1px solid #d7e3da;border-radius:9px;background:#fff;max-height:72vh}table{border-collapse:collapse;width:100%;min-width:1420px;font-size:13px}th{position:sticky;top:0;background:#eaf2ed;color:#345441;text-align:left;font-weight:600;padding:13px 11px;border-bottom:1px solid #c7d9cc;z-index:1}td{vertical-align:top;border-bottom:1px solid #e3ece6;padding:12px 11px;line-height:1.6}tr:hover td{background:#fafcf9}tr.checked td{background:#f0f8f1;color:#557361}td:first-child{width:46px}td:nth-child(2){width:218px}td:nth-child(3){width:220px}td:nth-child(4){width:120px}td:nth-child(5){width:140px}td:nth-child(6){width:270px}td:nth-child(7){width:340px}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;overflow-wrap:anywhere;color:#263e31}.row-field{display:block;font-weight:600;margin:5px 0}.method{display:block;margin-bottom:4px}.current{overflow-wrap:anywhere}.value-input{width:100%;font-size:13px;padding:8px}.check{width:17px;height:17px;accent-color:#24734f;margin-top:5px}details{margin-top:8px}summary{cursor:pointer;color:#256446}.evidence{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0 0;background:#f3f6f4;border-radius:5px;padding:9px;font-size:12px}.empty{padding:32px;text-align:center;color:#65766b}.footer{font-size:12px;color:#627366;margin-top:15px}.small-table{min-width:1050px}.small-table th,.small-table td{position:static;width:auto}.path{font-size:12px;overflow-wrap:anywhere}@media(max-width:700px){header{padding:22px 16px}main{padding:15px 12px}h1{font-size:23px}.cards{gap:7px}.card{padding:10px;min-width:135px}.summary{display:block}.toolbar{gap:7px}.table-wrap{max-height:68vh}}@media print{header{padding:0 0 15px}.toolbar,nav,button,.footer{display:none}body{background:#fff}main{padding:0}.table-wrap{overflow:visible;max-height:none;border:0}table{min-width:0;font-size:9px}th,td{padding:6px;position:static}th{background:#eee}.card strong{font-size:18px}.value-input{border:0;padding:0;font-size:9px}details{display:block}details>*{display:block}details summary{display:none}@page{size:A3 landscape;margin:12mm}}
+</style>
+</head>
+<body>
+<header>
+<div class="muted">2026-10-03 · 游戏 App / Go 服务端</div>
+<h1>待确认参数表单</h1>
+<p>按表、记录和字段逐项核对。每项列出恢复 SQL 的当前值，以及使用它的 biz 方法名。</p>
+<div class="cards" id="cards"></div>
+</header>
+<main>
+<div class="notice"><strong>先确认业务值，再改数据库。</strong> 当前值来自本机恢复 SQL，并非线上数据库查询。120 项 config 的 SET 变量均为 NULL，原样导入会跳过这些记录。种子、土地、道具是调试参数。首次导入修改 <code>08_restore_all_for_baota.sql</code>；已经导入的记录要明确 UPDATE，改 SET 后重跑不会覆盖旧值。<br>填写和勾选仅保存在本机浏览器；不会提交到数据库。密码请在你自己的数据库中填写，本表不记录密码或密码摘要。</div>
+<div class="toolbar">
+<input id="search" aria-label="搜索字段、配置键或方法名" placeholder="搜索：stake_price、GetLand、土地、字段名…">
+<select id="filter" aria-label="筛选确认状态"><option value="all">全部确认状态</option><option value="pending">尚未确认</option><option value="confirmed">已确认</option><option value="critical">上线前确认</option><option value="query">仅查询，无读取分支</option></select>
+<button id="export" class="primary">导出确认结果 JSON</button><button id="print">打印当前清单</button>
+</div>
+<nav id="tabs" aria-label="参数分组"></nav>
+<div class="summary"><h2 id="title"></h2><div class="muted" id="count" aria-live="polite"></div></div>
+<div class="table-wrap" id="content"></div>
+<p class="footer">App = ppothergame；后台 = ppothergameadmin。方法名取自当前 Go 源码。没有读取分支的键不算已生效配置；模板字段与已发放到用户的道具/土地/种子属性分别核对。</p>
+</main>
+<script>
+const DATA=__SETTINGS_DATA__;
+const KEY='pp-game-settings-20261003-'+DATA.sql_sha256.slice(0,12);
+let state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){}
+let group='config';
+const groups=[['config','config',120],['种子','种子参数',50],['土地','土地参数',60],['道具','道具参数',40],['其他记录','其他记录',DATA.counts.other_fields],['manual','后端 / 代码待你调整',DATA.manual.length],['inventory','38 表处理说明',38],['all','全部字段',DATA.rows.length]];
+const q=id=>document.getElementById(id);
+const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
+const cell=(tr,text,cls)=>{const n=el('td',text,cls);tr.append(n);return n};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(_){} };
+for(const [number,label] of [[120,'config 键'],[104,'实际读取'],[16,'仅查询'],[150,'种子 / 土地 / 道具字段']]){const c=el('div',undefined,'card');c.append(el('strong',String(number)),document.createTextNode(label));q('cards').append(c)}
+for(const [id,label,count] of groups){const b=el('button',label+' '+count);b.dataset.group=id;b.setAttribute('aria-selected',id===group?'true':'false');b.onclick=()=>{group=id;render()};q('tabs').append(b)}
+function filtered(){const text=q('search').value.trim().toLowerCase(),filter=q('filter').value;return DATA.rows.filter(r=>{
+ const saved=state[r.uid]||{};
+ return (group==='all'||r.group===group)&&(!text||JSON.stringify(r).toLowerCase().includes(text))&&
+  (filter==='all'||filter==='pending'&&!saved.confirmed||filter==='confirmed'&&saved.confirmed||filter==='critical'&&r.priority==='上线前确认'||filter==='query'&&r.status==='仅查询，无读取分支');
+})}
+function header(table,names){const head=el('thead'),tr=el('tr');for(const s of names)tr.append(el('th',s));head.append(tr);table.append(head);const body=el('tbody');table.append(body);return body}
+function render(){
+ for(const b of q('tabs').children)b.setAttribute('aria-selected',b.dataset.group===group?'true':'false');
+ q('title').textContent=groups.find(x=>x[0]===group)[1];q('content').textContent='';
+ if(group==='manual'){renderManual();return}if(group==='inventory'){renderInventory();return}
+ const selected=filtered(),table=el('table'),body=header(table,['确认','表 / 记录 / 字段','用途 / 格式','恢复 SQL 当前值','你确认的值','biz 使用方法','调整方式 / 注意事项']);
+ q('count').textContent='显示 '+selected.length+' 项 · 全部已确认 '+DATA.rows.filter(r=>state[r.uid]?.confirmed).length+'/'+DATA.rows.length;
+ for(const r of selected){const saved=state[r.uid]||{},tr=el('tr');if(saved.confirmed)tr.className='checked';
+  const check=el('input',undefined,'check');check.type='checkbox';check.checked=!!saved.confirmed;check.setAttribute('aria-label',r.table+' '+r.record+' '+r.field+' 已确认');check.onchange=()=>{state[r.uid]={...(state[r.uid]||{}),confirmed:check.checked};save();render()};cell(tr).append(check);
+  const id=cell(tr);id.append(el('code',r.table),el('div',r.record),el('code',r.field,'row-field'),el('span',r.priority,'tag '+(r.priority==='上线前确认'?'critical':r.priority==='按需保留'?'optional':'')));
+  if(r.template_id)id.append(el('div','模板 ID '+r.template_id,'muted'));if(r.sql_variable)id.append(el('code',r.sql_variable));
+  const purpose=cell(tr);purpose.append(el('div',r.purpose),el('div',r.type,'muted'));
+  cell(tr,r.current,'current');
+  const edit=cell(tr);if(r.sensitive)edit.append(el('span','在数据库填写；本表不记录','muted'));else{const input=el('input',undefined,'value-input');input.value=saved.value??'';input.placeholder='待你确认';input.setAttribute('aria-label',r.table+' '+r.record+' '+r.field+' 确认值');input.oninput=()=>{state[r.uid]={...(state[r.uid]||{}),value:input.value};save()};edit.append(input)}
+  const use=cell(tr);if(r.methods.length){for(const s of r.methods)use.append(el('code',s,'method'))}else use.append(el('div','未发现当前 biz 读取/使用','muted'));
+  if(r.query_methods.length){const d=el('details');d.append(el('summary','查询位置（含只查询的项）'));for(const s of r.query_methods)d.append(el('code',s,'method'));use.append(d)}
+  const note=cell(tr);note.append(el('div',r.change));const details=el('details');details.append(el('summary','展开单位、限制与源码依据'),el('p',r.notes));
+  for(const s of r.evidence||[]){if(s.parser){let text=(s.repo==='ppothergame'?'App':'后台')+'：'+s.method+'\n'+s.parser;for(const ref of s.references)text+='\nL'+ref.line+' '+ref.text;details.append(el('pre',text,'evidence'))}else if(s.line){details.append(el('div',repoPath(s.repo)+':'+s.line+' · '+s.method,'path'))}}
+  note.append(details);body.append(tr);
+ }
+ if(!selected.length){q('content').append(el('div','没有匹配的记录','empty'))}else q('content').append(table);
+}
+function repoPath(repo){return '/Users/wangjiabao/Documents/'+repo+'/internal/biz/app.go'}
+function renderManual(){const search=q('search').value.trim().toLowerCase(),table=el('table',undefined,'small-table'),body=header(table,['确认','项目 / 方法','当前位置 / 当前状态','目标 / 待你确认','说明']);let count=0;for(const [i,r] of DATA.manual.entries()){if(search&&!JSON.stringify(r).toLowerCase().includes(search))continue;const uid='manual:'+i,s=state[uid]||{},f=q('filter').value;if(f==='pending'&&s.confirmed||f==='confirmed'&&!s.confirmed||f==='query')continue;const tr=el('tr'),input=el('input',undefined,'check');input.type='checkbox';input.checked=!!s.confirmed;input.setAttribute('aria-label',r.item+' 已确认');input.onchange=()=>{state[uid]={confirmed:input.checked};save();render()};cell(tr).append(input);const a=cell(tr);a.append(el('strong',r.item),el('code',r.method,'method'));const b=cell(tr);b.append(el('div',r.location,'path'),el('p',r.current));cell(tr,r.target);cell(tr,r.note);body.append(tr);count++}q('count').textContent='显示 '+count+' 项；本次未修改后端源码';q('content').append(table)}
+function renderInventory(){const s=q('search').value.trim().toLowerCase(),table=el('table',undefined,'small-table'),body=header(table,['表名','字段数','空库处理方式']);let count=0;for(const r of DATA.inventory){if(s&&!JSON.stringify(r).toLowerCase().includes(s))continue;const tr=el('tr');cell(tr).append(el('code',r.table));cell(tr,String(r.columns));cell(tr,r.handling);body.append(tr);count++}q('count').textContent='显示 '+count+'/38 张表；运行时业务表不伪造历史记录';q('content').append(table)}
+q('search').oninput=render;q('filter').onchange=render;q('print').onclick=()=>window.print();
+q('export').onclick=()=>{const out={date:DATA.date,basis:DATA.basis,sql_sha256:DATA.sql_sha256,deployments:DATA.deployments,rows:DATA.rows.map(r=>({...r,confirmed:!!state[r.uid]?.confirmed,confirmed_value:r.sensitive?null:state[r.uid]?.value??''})),manual:DATA.manual.map((r,i)=>({...r,confirmed:!!state['manual:'+i]?.confirmed}))};const url=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json;charset=utf-8'}));const a=el('a');a.href=url;a.download='游戏参数确认结果_20261003.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+render();
+</script>
+</body>
+</html>

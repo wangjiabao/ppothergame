@@ -1,0 +1,6336 @@
+{
+  "fields": {
+    "admin_message.content": [
+      {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1401,
+        "field": "Content"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminMessagesList",
+        "line": 8629,
+        "field": "Content"
+      }
+    ],
+    "admin_message.content_two": [
+      {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1402,
+        "field": "ContentTwo"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminMessagesList",
+        "line": 8630,
+        "field": "ContentTwo"
+      }
+    ],
+    "admin_message.id": [
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminMessagesList",
+        "line": 8631,
+        "field": "ID"
+      }
+    ],
+    "admin_message.status": [
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminMessagesList",
+        "line": 8632,
+        "field": "Status"
+      }
+    ],
+    "land_info.created_at": [
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandConfig",
+        "line": 5958,
+        "field": "CreatedAt"
+      }
+    ],
+    "land_info.level": [
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8121,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8250,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetLand",
+        "line": 9718,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9907,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9929,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9930,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10030,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10052,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10053,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4622,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4739,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "SetLand",
+        "line": 5321,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandConfig",
+        "line": 5963,
+        "field": "Level"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetLand",
+        "line": 8375,
+        "field": "Level"
+      }
+    ],
+    "land_info.limit_date_max": [
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8125,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8254,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetLand",
+        "line": 9722,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9911,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10034,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4626,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4743,
+        "field": "LimitDateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "SetLand",
+        "line": 5325,
+        "field": "LimitDateMax"
+      }
+    ],
+    "land_info.max_health": [
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8123,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8252,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetLand",
+        "line": 9720,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9909,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10032,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4624,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4741,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "SetLand",
+        "line": 5323,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandConfig",
+        "line": 5961,
+        "field": "MaxHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetLand",
+        "line": 8377,
+        "field": "MaxHealth"
+      }
+    ],
+    "land_info.out_put_rate_max": [
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8099,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8231,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetLand",
+        "line": 9703,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9890,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10013,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4608,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4720,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "SetLand",
+        "line": 5306,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandConfig",
+        "line": 5959,
+        "field": "OutPutRateMax"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetLand",
+        "line": 8360,
+        "field": "OutPutRateMax"
+      }
+    ],
+    "land_info.out_put_rate_min": [
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8098,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8230,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetLand",
+        "line": 9702,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9889,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10012,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4607,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4719,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "SetLand",
+        "line": 5305,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandConfig",
+        "line": 5960,
+        "field": "OutPutRateMin"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetLand",
+        "line": 8359,
+        "field": "OutPutRateMin"
+      }
+    ],
+    "land_info.per_health": [
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8124,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "GetLand",
+        "line": 8253,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetLand",
+        "line": 9721,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 9910,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "SetBuyLand",
+        "line": 10033,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4625,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "GetLand",
+        "line": 4742,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "SetLand",
+        "line": 5324,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandConfig",
+        "line": 5962,
+        "field": "PerHealth"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetLand",
+        "line": 8378,
+        "field": "PerHealth"
+      }
+    ],
+    "prop_info.created_at": [
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6110,
+        "field": "CreatedAt"
+      }
+    ],
+    "prop_info.five_one": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4439,
+        "field": "FiveOne"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4467,
+        "field": "FiveOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2471,
+        "field": "FiveOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2488,
+        "field": "FiveOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfigSet",
+        "line": 6051,
+        "field": "FiveOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6100,
+        "field": "FiveOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8489,
+        "field": "FiveOne"
+      }
+    ],
+    "prop_info.four_one": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4438,
+        "field": "FourOne"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4469,
+        "field": "FourOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2470,
+        "field": "FourOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2490,
+        "field": "FourOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfigSet",
+        "line": 6053,
+        "field": "FourOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6102,
+        "field": "FourOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8488,
+        "field": "FourOne"
+      }
+    ],
+    "prop_info.get_rate": [
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2338,
+        "field": "GetRate"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfigSet",
+        "line": 6064,
+        "field": "GetRate"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6108,
+        "field": "GetRate"
+      }
+    ],
+    "prop_info.one_one": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4433,
+        "field": "OneOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2465,
+        "field": "OneOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8483,
+        "field": "OneOne"
+      }
+    ],
+    "prop_info.one_two": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4434,
+        "field": "OneTwo"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2466,
+        "field": "OneTwo"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8484,
+        "field": "OneTwo"
+      }
+    ],
+    "prop_info.prop_type": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4464,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4466,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4468,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4470,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2333,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2338,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2485,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2487,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2489,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2491,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6097,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6099,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6101,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6103,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6109,
+        "field": "PropType"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8426,
+        "field": "PropType"
+      }
+    ],
+    "prop_info.three_one": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4437,
+        "field": "ThreeOne"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4465,
+        "field": "ThreeOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2469,
+        "field": "ThreeOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2486,
+        "field": "ThreeOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfigSet",
+        "line": 6049,
+        "field": "ThreeOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6098,
+        "field": "ThreeOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8487,
+        "field": "ThreeOne"
+      }
+    ],
+    "prop_info.two_one": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4435,
+        "field": "TwoOne"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4471,
+        "field": "TwoOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2467,
+        "field": "TwoOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2492,
+        "field": "TwoOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfigSet",
+        "line": 6055,
+        "field": "TwoOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminPropConfig",
+        "line": 6104,
+        "field": "TwoOne"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8485,
+        "field": "TwoOne"
+      }
+    ],
+    "prop_info.two_two": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4436,
+        "field": "TwoTwo"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2468,
+        "field": "TwoTwo"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetProp",
+        "line": 8486,
+        "field": "TwoTwo"
+      }
+    ],
+    "random_seeds.scene": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4317,
+        "field": "Scene"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "LandPlayOne",
+        "line": 4610,
+        "field": "Scene"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8612,
+        "field": "Scene"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2360,
+        "field": "Scene"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayOne",
+        "line": 2592,
+        "field": "Scene"
+      }
+    ],
+    "random_seeds.seed_value": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4318,
+        "field": "SeedValue"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "LandPlayOne",
+        "line": 4611,
+        "field": "SeedValue"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8613,
+        "field": "SeedValue"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2361,
+        "field": "SeedValue"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayOne",
+        "line": 2593,
+        "field": "SeedValue"
+      }
+    ],
+    "seed_info.created_at": [
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSeedConfig",
+        "line": 6020,
+        "field": "CreatedAt"
+      }
+    ],
+    "seed_info.get_rate": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4274,
+        "field": "GetRate"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2317,
+        "field": "GetRate"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSeedConfig",
+        "line": 6019,
+        "field": "GetRate"
+      }
+    ],
+    "seed_info.id": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4269,
+        "field": "ID"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4274,
+        "field": "ID"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2312,
+        "field": "ID"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2317,
+        "field": "ID"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetSeed",
+        "line": 8525,
+        "field": "ID"
+      }
+    ],
+    "seed_info.name": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4386,
+        "field": "Name"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2429,
+        "field": "Name"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetSeed",
+        "line": 8584,
+        "field": "Name"
+      }
+    ],
+    "seed_info.out_max_amount": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4369,
+        "field": "OutMaxAmount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2412,
+        "field": "OutMaxAmount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSeedConfig",
+        "line": 6021,
+        "field": "OutMaxAmount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetSeed",
+        "line": 8568,
+        "field": "OutMaxAmount"
+      }
+    ],
+    "seed_info.out_min_amount": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4368,
+        "field": "OutMinAmount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2411,
+        "field": "OutMinAmount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSeedConfig",
+        "line": 6022,
+        "field": "OutMinAmount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetSeed",
+        "line": 8567,
+        "field": "OutMinAmount"
+      }
+    ],
+    "seed_info.out_over_time": [
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4387,
+        "field": "OutOverTime"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4418,
+        "field": "OutOverTime"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2430,
+        "field": "OutOverTime"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "OpenBox",
+        "line": 2450,
+        "field": "OutOverTime"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSeedConfig",
+        "line": 6023,
+        "field": "OutOverTime"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetSeed",
+        "line": 8585,
+        "field": "OutOverTime"
+      }
+    ],
+    "stake_get_total.amount": [
+      {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1346,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1348,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8384,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8387,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8423,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8442,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 959,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 961,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4822,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4825,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4851,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4870,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5605,
+        "field": "Amount"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5607,
+        "field": "Amount"
+      }
+    ],
+    "stake_get_total.balance": [
+      {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1337,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8384,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8387,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8423,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8442,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8587,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8593,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 950,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4822,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4825,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4851,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGet",
+        "line": 4870,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGetPlay",
+        "line": 4948,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "StakeGetPlay",
+        "line": 4954,
+        "field": "Balance"
+      },
+      {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5599,
+        "field": "Balance"
+      }
+    ]
+  },
+  "config_reads": [
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserBuy",
+        "line": 751
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1027
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1030
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1033
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1036
+      }
+    },
+    {
+      "key": "withdraw_amount_min_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1040
+      }
+    },
+    {
+      "key": "withdraw_amount_max_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1043
+      }
+    },
+    {
+      "key": "b_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1046
+      }
+    },
+    {
+      "key": "exchange_fee_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1049
+      }
+    },
+    {
+      "key": "exchange_fee_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1052
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1055
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1058
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1061
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1064
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1067
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1070
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1073
+      }
+    },
+    {
+      "key": "rent_rate_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1076
+      }
+    },
+    {
+      "key": "rent_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1079
+      }
+    },
+    {
+      "key": "rent_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1082
+      }
+    },
+    {
+      "key": "sys_content",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1085
+      }
+    },
+    {
+      "key": "sys_content_e",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1088
+      }
+    },
+    {
+      "key": "max_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1091
+      }
+    },
+    {
+      "key": "min_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1094
+      }
+    },
+    {
+      "key": "max_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1097
+      }
+    },
+    {
+      "key": "min_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1100
+      }
+    },
+    {
+      "key": "min_stake_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1103
+      }
+    },
+    {
+      "key": "exchange_three_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1106
+      }
+    },
+    {
+      "key": "withdraw_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1109
+      }
+    },
+    {
+      "key": "withdraw_amount_min_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1112
+      }
+    },
+    {
+      "key": "withdraw_amount_max_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1115
+      }
+    },
+    {
+      "key": "exchange_max_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1118
+      }
+    },
+    {
+      "key": "exchange_min_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1121
+      }
+    },
+    {
+      "key": "one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1124
+      }
+    },
+    {
+      "key": "two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1127
+      }
+    },
+    {
+      "key": "three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1130
+      }
+    },
+    {
+      "key": "stake_ispay_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1134
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1149
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1152
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1155
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1158
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1161
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1164
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1167
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1170
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1173
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1176
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1179
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 1182
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1646
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1649
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1652
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1655
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1658
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1661
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1664
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1667
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1670
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1673
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserBuyL",
+        "line": 1877
+      }
+    },
+    {
+      "key": "queue_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserStakeGitStakeList",
+        "line": 2071
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserBoxList",
+        "line": 2260
+      }
+    },
+    {
+      "key": "g_1",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3475
+      }
+    },
+    {
+      "key": "g_2",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3478
+      }
+    },
+    {
+      "key": "g_3",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3481
+      }
+    },
+    {
+      "key": "g_4",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3484
+      }
+    },
+    {
+      "key": "g_5",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3487
+      }
+    },
+    {
+      "key": "g_6",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3490
+      }
+    },
+    {
+      "key": "g_7",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3493
+      }
+    },
+    {
+      "key": "g_8",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3496
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3977
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3980
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3984
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3987
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3990
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3993
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4188
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4192
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4195
+      }
+    },
+    {
+      "key": "play_one_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayOne",
+        "line": 4589
+      }
+    },
+    {
+      "key": "play_two_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayOne",
+        "line": 4592
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4772
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4776
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4779
+      }
+    },
+    {
+      "key": "two_sub_reward",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayFour",
+        "line": 5366
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5658
+      }
+    },
+    {
+      "key": "prop_two_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5662
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5666
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5669
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySeven",
+        "line": 6135
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySeven",
+        "line": 6138
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6400
+      }
+    },
+    {
+      "key": "buy_land_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6404
+      }
+    },
+    {
+      "key": "buy_land_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6407
+      }
+    },
+    {
+      "key": "buy_land_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6410
+      }
+    },
+    {
+      "key": "sell_land",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Sell",
+        "line": 6950
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGit",
+        "line": 7219
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGit",
+        "line": 7222
+      }
+    },
+    {
+      "key": "stake_rate_new",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGit",
+        "line": 7225
+      }
+    },
+    {
+      "key": "rent_rate_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "RentLand",
+        "line": 7432
+      }
+    },
+    {
+      "key": "max_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8349
+      }
+    },
+    {
+      "key": "min_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8353
+      }
+    },
+    {
+      "key": "min_stake_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8357
+      }
+    },
+    {
+      "key": "max_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8548
+      }
+    },
+    {
+      "key": "min_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8552
+      }
+    },
+    {
+      "key": "win_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8556
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8560
+      }
+    },
+    {
+      "key": "recommend",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyTwo",
+        "line": 9123
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyTwo",
+        "line": 9126
+      }
+    },
+    {
+      "key": "can_withdraw",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9454
+      }
+    },
+    {
+      "key": "withdraw_amount_min_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9458
+      }
+    },
+    {
+      "key": "withdraw_amount_max_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9461
+      }
+    },
+    {
+      "key": "withdraw_amount_min_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9465
+      }
+    },
+    {
+      "key": "withdraw_amount_max_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9468
+      }
+    },
+    {
+      "key": "withdraw_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9472
+      }
+    },
+    {
+      "key": "withdraw_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9476
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 821
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 824
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 827
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 830
+      }
+    },
+    {
+      "key": "b_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 833
+      }
+    },
+    {
+      "key": "exchange_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 836
+      }
+    },
+    {
+      "key": "reward_stake_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 839
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 842
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 845
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 848
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 851
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 854
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 857
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserBoxList",
+        "line": 1313
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2158
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2161
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2165
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2168
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2171
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2174
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayTwo",
+        "line": 2702
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayTwo",
+        "line": 2706
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayTwo",
+        "line": 2710
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlaySix",
+        "line": 3434
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlaySix",
+        "line": 3438
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlaySix",
+        "line": 3442
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Buy",
+        "line": 3713
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "StakeGetPlay",
+        "line": 4979
+      }
+    },
+    {
+      "key": "exchange_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Exchange",
+        "line": 5174
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Withdraw",
+        "line": 5224
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Withdraw",
+        "line": 5227
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5507
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5510
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5513
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5516
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5519
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5522
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5525
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5528
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5531
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5534
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6156
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6159
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6162
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6165
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6168
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6171
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetBox",
+        "line": 6204
+      }
+    },
+    {
+      "key": "reward_land",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandReward",
+        "line": 6281
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetConfig",
+        "line": 6497
+      }
+    },
+    {
+      "key": "queue_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetQueue",
+        "line": 6562
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6752
+      }
+    },
+    {
+      "key": "buy_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6755
+      }
+    },
+    {
+      "key": "buy_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6758
+      }
+    },
+    {
+      "key": "buy_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6761
+      }
+    },
+    {
+      "key": "buy_four",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6764
+      }
+    },
+    {
+      "key": "buy_five",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6767
+      }
+    },
+    {
+      "key": "buy_six",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6770
+      }
+    },
+    {
+      "key": "buy_seven",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6773
+      }
+    },
+    {
+      "key": "buy_eight",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6776
+      }
+    },
+    {
+      "key": "recommend_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6779
+      }
+    },
+    {
+      "key": "recommend_two_sub",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6782
+      }
+    },
+    {
+      "key": "area_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6785
+      }
+    },
+    {
+      "key": "area_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6788
+      }
+    },
+    {
+      "key": "area_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6791
+      }
+    },
+    {
+      "key": "area_four",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6794
+      }
+    },
+    {
+      "key": "area_five",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6797
+      }
+    },
+    {
+      "key": "area_zero",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6800
+      }
+    },
+    {
+      "key": "all_each",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6803
+      }
+    },
+    {
+      "key": "g_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8155
+      }
+    },
+    {
+      "key": "g_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8158
+      }
+    },
+    {
+      "key": "g_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8161
+      }
+    },
+    {
+      "key": "g_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8164
+      }
+    },
+    {
+      "key": "g_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8167
+      }
+    },
+    {
+      "key": "g_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8170
+      }
+    },
+    {
+      "key": "g_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8173
+      }
+    },
+    {
+      "key": "g_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8176
+      }
+    },
+    {
+      "key": "one_rate_new",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9033
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9036
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9040
+      }
+    },
+    {
+      "key": "rate_r_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9044
+      }
+    },
+    {
+      "key": "rate_r_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9047
+      }
+    },
+    {
+      "key": "rate_r_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9050
+      }
+    },
+    {
+      "key": "rate_r_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9053
+      }
+    },
+    {
+      "key": "rate_r_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9056
+      }
+    },
+    {
+      "key": "rate_r_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9059
+      }
+    },
+    {
+      "key": "rate_r_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9062
+      }
+    },
+    {
+      "key": "rate_r_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9065
+      }
+    },
+    {
+      "key": "rate_r_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9068
+      }
+    },
+    {
+      "key": "rate_r_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9071
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9074
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9077
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9080
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9083
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9086
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9089
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9092
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9095
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9098
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9101
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9104
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9107
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewThree",
+        "line": 9403
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminRewardListTwo",
+        "line": 9555
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserBuy",
+        "line": 9774
+      }
+    }
+  ],
+  "config_queries": [
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserBuy",
+        "line": 742
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "b_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "exchange_fee_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "exchange_fee_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "reward_stake_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_amount_min_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_amount_max_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "rent_rate_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "rent_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "rent_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "sys_content",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "sys_content_e",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "max_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "min_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "max_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "min_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "min_stake_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_amount_min_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_amount_max_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "exchange_three_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "withdraw_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "exchange_max_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "exchange_min_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_ispay_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_ispay_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_ispay_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_ispay_four",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_ispay_five",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserInfo",
+        "line": 965
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRecommend",
+        "line": 1627
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserBuyL",
+        "line": 1868
+      }
+    },
+    {
+      "key": "queue_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserStakeGitStakeList",
+        "line": 2062
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserBoxList",
+        "line": 2250
+      }
+    },
+    {
+      "key": "g_1",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_2",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_3",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_4",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_5",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_6",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_7",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "g_8",
+      "site": {
+        "repo": "ppothergame",
+        "method": "UserRankList",
+        "line": 3459
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyBox",
+        "line": 3961
+      }
+    },
+    {
+      "key": "open_box_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4166
+      }
+    },
+    {
+      "key": "open_box_price_use",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4166
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4166
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4166
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergame",
+        "method": "OpenBox",
+        "line": 4166
+      }
+    },
+    {
+      "key": "play_one_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayOne",
+        "line": 4579
+      }
+    },
+    {
+      "key": "play_two_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayOne",
+        "line": 4579
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "open_box_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "open_box_price_use",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayTwo",
+        "line": 4749
+      }
+    },
+    {
+      "key": "two_sub_reward",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlayFour",
+        "line": 5356
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "low_reward_u",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "prop_two_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "open_box_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "open_box_price_use",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySix",
+        "line": 5635
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySeven",
+        "line": 6124
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergame",
+        "method": "LandPlaySeven",
+        "line": 6124
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6387
+      }
+    },
+    {
+      "key": "buy_land_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6387
+      }
+    },
+    {
+      "key": "buy_land_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6387
+      }
+    },
+    {
+      "key": "buy_land_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Buy",
+        "line": 6387
+      }
+    },
+    {
+      "key": "sell_land",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Sell",
+        "line": 6941
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGit",
+        "line": 7208
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGit",
+        "line": 7208
+      }
+    },
+    {
+      "key": "stake_rate_new",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGit",
+        "line": 7208
+      }
+    },
+    {
+      "key": "rent_rate_one",
+      "site": {
+        "repo": "ppothergame",
+        "method": "RentLand",
+        "line": 7421
+      }
+    },
+    {
+      "key": "rent_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "RentLand",
+        "line": 7421
+      }
+    },
+    {
+      "key": "rent_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "RentLand",
+        "line": 7421
+      }
+    },
+    {
+      "key": "max_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8337
+      }
+    },
+    {
+      "key": "min_stake",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8337
+      }
+    },
+    {
+      "key": "min_stake_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGet",
+        "line": 8337
+      }
+    },
+    {
+      "key": "max_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8535
+      }
+    },
+    {
+      "key": "min_play",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8535
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8535
+      }
+    },
+    {
+      "key": "win_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "StakeGetPlay",
+        "line": 8535
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyTwo",
+        "line": 9113
+      }
+    },
+    {
+      "key": "recommend",
+      "site": {
+        "repo": "ppothergame",
+        "method": "BuyTwo",
+        "line": 9113
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_amount_min_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_amount_max_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_rate_two",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "can_withdraw",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_amount_min_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_amount_max_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "withdraw_rate_three",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "exchange_stake_rate",
+      "site": {
+        "repo": "ppothergame",
+        "method": "Withdraw",
+        "line": 9435
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "b_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "exchange_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "reward_stake_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserInfo",
+        "line": 799
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "UserBoxList",
+        "line": 1303
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2143
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2143
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2143
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2143
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2143
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "BuyBox",
+        "line": 2143
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayTwo",
+        "line": 2692
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayTwo",
+        "line": 2692
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlayTwo",
+        "line": 2692
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlaySix",
+        "line": 3424
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlaySix",
+        "line": 3424
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "LandPlaySix",
+        "line": 3424
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Buy",
+        "line": 3703
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "StakeGetPlay",
+        "line": 4970
+      }
+    },
+    {
+      "key": "exchange_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Exchange",
+        "line": 5165
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Withdraw",
+        "line": 5214
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "Withdraw",
+        "line": 5214
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserList",
+        "line": 5487
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6141
+      }
+    },
+    {
+      "key": "box_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6141
+      }
+    },
+    {
+      "key": "box_sell_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6141
+      }
+    },
+    {
+      "key": "box_start",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6141
+      }
+    },
+    {
+      "key": "box_end",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6141
+      }
+    },
+    {
+      "key": "box_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetBox",
+        "line": 6141
+      }
+    },
+    {
+      "key": "box_num",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetBox",
+        "line": 6194
+      }
+    },
+    {
+      "key": "reward_land",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminLandReward",
+        "line": 6274
+      }
+    },
+    {
+      "key": "withdraw_amount_min",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_amount_max",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "reward_stake_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_over_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "sell_fee_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "one_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "two_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "three_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "b_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_fee_rate_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_amount_max_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_amount_min_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_rate_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "s_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "sell_land",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "play_one_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "play_two_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "prop_two_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rent_rate_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rent_rate_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rent_rate_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "buy_land_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "buy_land_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "buy_land_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "self_sub",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "reward_land",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "sys_content",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "sys_content_e",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "two_sub_reward",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "max_play",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "min_play",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "max_stake",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "min_stake",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "min_stake_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "win_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "can_withdraw",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_amount_min_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_amount_max_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "withdraw_rate_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_max_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_min_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_three_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_price_open",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_ispay_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "open_box_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "open_box_price_use",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_recommend_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_recommend_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_recommend_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "exchange_stake_rate",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "queue_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "one_rate_new",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "rate_r_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "g_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "stake_rate_new",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminGetConfig",
+        "line": 6353
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetConfig",
+        "line": 6487
+      }
+    },
+    {
+      "key": "queue_amount",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminSetQueue",
+        "line": 6555
+      }
+    },
+    {
+      "key": "buy_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_four",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_five",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_six",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_seven",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "buy_eight",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "recommend_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "recommend_two_sub",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "area_one",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "area_two",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "area_three",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "area_four",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "area_five",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "area_zero",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "all_each",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDailyReward",
+        "line": 6740
+      }
+    },
+    {
+      "key": "g_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "g_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminDaily",
+        "line": 8139
+      }
+    },
+    {
+      "key": "one_rate_new",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "rate_r_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_1",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_2",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_3",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_4",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_5",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_6",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_7",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_8",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_9",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "v_10",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "stake_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "stake_price_on",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewTwo",
+        "line": 9001
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "DepositNewThree",
+        "line": 9395
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminRewardListTwo",
+        "line": 9545
+      }
+    },
+    {
+      "key": "u_price",
+      "site": {
+        "repo": "ppothergameadmin",
+        "method": "AdminUserBuy",
+        "line": 9765
+      }
+    }
+  ],
+  "function_ranges": {
+    "ppothergame:AddMessage": [
+      5159,
+      5211
+    ],
+    "ppothergame:Buy": [
+      6352,
+      6742
+    ],
+    "ppothergame:BuyBox": [
+      3923,
+      4090
+    ],
+    "ppothergame:BuyLand": [
+      10138,
+      10287
+    ],
+    "ppothergame:BuyLandRecord": [
+      10068,
+      10134
+    ],
+    "ppothergame:BuyTwo": [
+      9059,
+      9404
+    ],
+    "ppothergame:Exchange": [
+      8765,
+      8955
+    ],
+    "ppothergame:GetBuyLand": [
+      9745,
+      9802
+    ],
+    "ppothergame:GetExistUserByAddressOrCreate": [
+      633,
+      716
+    ],
+    "ppothergame:GetIspayPrice": [
+      8964,
+      9011
+    ],
+    "ppothergame:GetLand": [
+      7993,
+      8277
+    ],
+    "ppothergame:GetReservers": [
+      9013,
+      9055
+    ],
+    "ppothergame:LandAddOutRate": [
+      7913,
+      7989
+    ],
+    "ppothergame:LandPlay": [
+      7625,
+      7911
+    ],
+    "ppothergame:LandPlayFive": [
+      5477,
+      5592
+    ],
+    "ppothergame:LandPlayFour": [
+      5332,
+      5474
+    ],
+    "ppothergame:LandPlayOne": [
+      4492,
+      4704
+    ],
+    "ppothergame:LandPlaySeven": [
+      6101,
+      6348
+    ],
+    "ppothergame:LandPlaySix": [
+      5595,
+      6096
+    ],
+    "ppothergame:LandPlayThree": [
+      5214,
+      5329
+    ],
+    "ppothergame:LandPlayTwo": [
+      4709,
+      5155
+    ],
+    "ppothergame:NewAppUsecase": [
+      621,
+      623
+    ],
+    "ppothergame:OpenBox": [
+      4100,
+      4487
+    ],
+    "ppothergame:RandomBoolCrypto": [
+      625,
+      631
+    ],
+    "ppothergame:RentLand": [
+      7391,
+      7621
+    ],
+    "ppothergame:Sell": [
+      6744,
+      7171
+    ],
+    "ppothergame:SetBuyLand": [
+      9804,
+      10066
+    ],
+    "ppothergame:SetGit": [
+      8690,
+      8692
+    ],
+    "ppothergame:SetGiw": [
+      8686,
+      8688
+    ],
+    "ppothergame:SetLand": [
+      9663,
+      9743
+    ],
+    "ppothergame:StakeGet": [
+      8281,
+      8490
+    ],
+    "ppothergame:StakeGetPlay": [
+      8492,
+      8684
+    ],
+    "ppothergame:StakeGit": [
+      7175,
+      7387
+    ],
+    "ppothergame:ToAmount": [
+      8696,
+      8763
+    ],
+    "ppothergame:UserBackList": [
+      2294,
+      2452
+    ],
+    "ppothergame:UserBoxList": [
+      2235,
+      2292
+    ],
+    "ppothergame:UserBuy": [
+      718,
+      891
+    ],
+    "ppothergame:UserBuyL": [
+      1848,
+      1937
+    ],
+    "ppothergame:UserIndexList": [
+      3213,
+      3433
+    ],
+    "ppothergame:UserInfo": [
+      893,
+      1606
+    ],
+    "ppothergame:UserLand": [
+      1939,
+      2037
+    ],
+    "ppothergame:UserMarketLandList": [
+      2557,
+      2651
+    ],
+    "ppothergame:UserMarketPropList": [
+      2654,
+      2767
+    ],
+    "ppothergame:UserMarketRentLandList": [
+      2770,
+      2906
+    ],
+    "ppothergame:UserMarketSeedList": [
+      2455,
+      2554
+    ],
+    "ppothergame:UserMyMarketList": [
+      2909,
+      3086
+    ],
+    "ppothergame:UserNoticeList": [
+      3089,
+      3138
+    ],
+    "ppothergame:UserOrderList": [
+      3819,
+      3918
+    ],
+    "ppothergame:UserOrderListTwo": [
+      3712,
+      3816
+    ],
+    "ppothergame:UserRankList": [
+      3436,
+      3566
+    ],
+    "ppothergame:UserRecommend": [
+      1608,
+      1765
+    ],
+    "ppothergame:UserRecommendL": [
+      1767,
+      1846
+    ],
+    "ppothergame:UserRewardList": [
+      3630,
+      3709
+    ],
+    "ppothergame:UserStakeGitRewardList": [
+      2185,
+      2233
+    ],
+    "ppothergame:UserStakeGitStakeList": [
+      2039,
+      2183
+    ],
+    "ppothergame:UserStakeRewardList": [
+      3141,
+      3210
+    ],
+    "ppothergame:UserTeamDepositList": [
+      3567,
+      3628
+    ],
+    "ppothergame:Withdraw": [
+      9406,
+      9661
+    ],
+    "ppothergameadmin:AdminDaily": [
+      8124,
+      8286
+    ],
+    "ppothergameadmin:AdminDailyReward": [
+      6716,
+      8122
+    ],
+    "ppothergameadmin:AdminGetBox": [
+      6128,
+      6184
+    ],
+    "ppothergameadmin:AdminGetConfig": [
+      6346,
+      6473
+    ],
+    "ppothergameadmin:AdminLandConfig": [
+      5939,
+      5972
+    ],
+    "ppothergameadmin:AdminLandConfigSet": [
+      5914,
+      5937
+    ],
+    "ppothergameadmin:AdminLandReward": [
+      6266,
+      6344
+    ],
+    "ppothergameadmin:AdminLogin": [
+      5348,
+      5365
+    ],
+    "ppothergameadmin:AdminMessagesList": [
+      8614,
+      8641
+    ],
+    "ppothergameadmin:AdminPriceChange": [
+      6604,
+      6714
+    ],
+    "ppothergameadmin:AdminPropConfig": [
+      6077,
+      6126
+    ],
+    "ppothergameadmin:AdminPropConfigSet": [
+      6034,
+      6075
+    ],
+    "ppothergameadmin:AdminRecommendList": [
+      5681,
+      5738
+    ],
+    "ppothergameadmin:AdminRecordList": [
+      5814,
+      5912
+    ],
+    "ppothergameadmin:AdminRewardList": [
+      9643,
+      9738
+    ],
+    "ppothergameadmin:AdminRewardListTwo": [
+      9528,
+      9641
+    ],
+    "ppothergameadmin:AdminSeedConfig": [
+      6000,
+      6032
+    ],
+    "ppothergameadmin:AdminSeedConfigSet": [
+      5974,
+      5998
+    ],
+    "ppothergameadmin:AdminSetAddress": [
+      5039,
+      5041
+    ],
+    "ppothergameadmin:AdminSetBox": [
+      6186,
+      6260
+    ],
+    "ppothergameadmin:AdminSetBuyLand": [
+      8643,
+      8710
+    ],
+    "ppothergameadmin:AdminSetCanLand": [
+      5067,
+      5069
+    ],
+    "ppothergameadmin:AdminSetCanPlayAdd": [
+      5051,
+      5053
+    ],
+    "ppothergameadmin:AdminSetCanPlaySix": [
+      5055,
+      5057
+    ],
+    "ppothergameadmin:AdminSetCanRent": [
+      5059,
+      5061
+    ],
+    "ppothergameadmin:AdminSetCanSell": [
+      5043,
+      5045
+    ],
+    "ppothergameadmin:AdminSetCanSellProp": [
+      5047,
+      5049
+    ],
+    "ppothergameadmin:AdminSetConfig": [
+      6475,
+      6544
+    ],
+    "ppothergameadmin:AdminSetGit": [
+      5031,
+      5033
+    ],
+    "ppothergameadmin:AdminSetGiw": [
+      5023,
+      5025
+    ],
+    "ppothergameadmin:AdminSetGiwTwo": [
+      5027,
+      5029
+    ],
+    "ppothergameadmin:AdminSetLand": [
+      8288,
+      8402
+    ],
+    "ppothergameadmin:AdminSetLockReward": [
+      5130,
+      5132
+    ],
+    "ppothergameadmin:AdminSetLockUse": [
+      5079,
+      5128
+    ],
+    "ppothergameadmin:AdminSetOneTwoThree": [
+      5075,
+      5077
+    ],
+    "ppothergameadmin:AdminSetProp": [
+      8404,
+      8508
+    ],
+    "ppothergameadmin:AdminSetQueue": [
+      6546,
+      6602
+    ],
+    "ppothergameadmin:AdminSetSeed": [
+      8510,
+      8604
+    ],
+    "ppothergameadmin:AdminSetUsdt": [
+      5035,
+      5037
+    ],
+    "ppothergameadmin:AdminSetVip": [
+      5071,
+      5073
+    ],
+    "ppothergameadmin:AdminSetWithdrawMax": [
+      5063,
+      5065
+    ],
+    "ppothergameadmin:AdminUserBackList": [
+      9988,
+      10101
+    ],
+    "ppothergameadmin:AdminUserBuy": [
+      9740,
+      9914
+    ],
+    "ppothergameadmin:AdminUserLand": [
+      9916,
+      9986
+    ],
+    "ppothergameadmin:AdminUserList": [
+      5445,
+      5679
+    ],
+    "ppothergameadmin:AdminUserSendLandList": [
+      10248,
+      10327
+    ],
+    "ppothergameadmin:AdminUserSendList": [
+      10103,
+      10246
+    ],
+    "ppothergameadmin:AdminUserStakeList": [
+      5367,
+      5443
+    ],
+    "ppothergameadmin:AdminWithdrawList": [
+      5740,
+      5812
+    ],
+    "ppothergameadmin:Buy": [
+      3684,
+      3866
+    ],
+    "ppothergameadmin:BuyBox": [
+      2119,
+      2248
+    ],
+    "ppothergameadmin:DeleteAdminMessages": [
+      8610,
+      8612
+    ],
+    "ppothergameadmin:DepositNew": [
+      8728,
+      8829
+    ],
+    "ppothergameadmin:DepositNewNew": [
+      8831,
+      8855
+    ],
+    "ppothergameadmin:DepositNewThree": [
+      9385,
+      9510
+    ],
+    "ppothergameadmin:DepositNewTwo": [
+      8957,
+      9383
+    ],
+    "ppothergameadmin:Exchange": [
+      5134,
+      5195
+    ],
+    "ppothergameadmin:GetEthUserRecordLast": [
+      8712,
+      8714
+    ],
+    "ppothergameadmin:GetEthUserRecordLastThree": [
+      8720,
+      8722
+    ],
+    "ppothergameadmin:GetEthUserRecordLastTwo": [
+      8716,
+      8718
+    ],
+    "ppothergameadmin:GetExistUserByAddressOrCreate": [
+      701,
+      770
+    ],
+    "ppothergameadmin:GetIspayPrice": [
+      8864,
+      8911
+    ],
+    "ppothergameadmin:GetLand": [
+      4534,
+      4766
+    ],
+    "ppothergameadmin:GetReservers": [
+      8913,
+      8955
+    ],
+    "ppothergameadmin:GetUserByAddress": [
+      8724,
+      8726
+    ],
+    "ppothergameadmin:GetUserByUserIds": [
+      9516,
+      9518
+    ],
+    "ppothergameadmin:GetWithdrawPassOrRewardedFirst": [
+      9512,
+      9514
+    ],
+    "ppothergameadmin:LandAddOutRate": [
+      4463,
+      4532
+    ],
+    "ppothergameadmin:LandPlay": [
+      4270,
+      4461
+    ],
+    "ppothergameadmin:LandPlayFive": [
+      3148,
+      3257
+    ],
+    "ppothergameadmin:LandPlayFour": [
+      3029,
+      3145
+    ],
+    "ppothergameadmin:LandPlayOne": [
+      2513,
+      2666
+    ],
+    "ppothergameadmin:LandPlaySeven": [
+      3543,
+      3680
+    ],
+    "ppothergameadmin:LandPlaySix": [
+      3260,
+      3540
+    ],
+    "ppothergameadmin:LandPlayThree": [
+      2921,
+      3026
+    ],
+    "ppothergameadmin:LandPlayTwo": [
+      2671,
+      2918
+    ],
+    "ppothergameadmin:NewAppUsecase": [
+      689,
+      691
+    ],
+    "ppothergameadmin:OpenBox": [
+      2257,
+      2508
+    ],
+    "ppothergameadmin:RandomBoolCrypto": [
+      693,
+      699
+    ],
+    "ppothergameadmin:RentLand": [
+      4155,
+      4268
+    ],
+    "ppothergameadmin:Sell": [
+      3868,
+      4085
+    ],
+    "ppothergameadmin:SetAdminMessages": [
+      8606,
+      8608
+    ],
+    "ppothergameadmin:SetGit": [
+      5019,
+      5021
+    ],
+    "ppothergameadmin:SetGiw": [
+      5015,
+      5017
+    ],
+    "ppothergameadmin:SetLand": [
+      5267,
+      5346
+    ],
+    "ppothergameadmin:StakeGet": [
+      4770,
+      4908
+    ],
+    "ppothergameadmin:StakeGetPlay": [
+      4910,
+      5013
+    ],
+    "ppothergameadmin:StakeGit": [
+      4087,
+      4153
+    ],
+    "ppothergameadmin:UpdateWithdrawDoing": [
+      9524,
+      9526
+    ],
+    "ppothergameadmin:UpdateWithdrawSuccess": [
+      9520,
+      9522
+    ],
+    "ppothergameadmin:UserBackList": [
+      1347,
+      1452
+    ],
+    "ppothergameadmin:UserBoxList": [
+      1288,
+      1345
+    ],
+    "ppothergameadmin:UserIndexList": [
+      1898,
+      2064
+    ],
+    "ppothergameadmin:UserInfo": [
+      772,
+      999
+    ],
+    "ppothergameadmin:UserLand": [
+      1153,
+      1198
+    ],
+    "ppothergameadmin:UserMarketLandList": [
+      1497,
+      1537
+    ],
+    "ppothergameadmin:UserMarketPropList": [
+      1540,
+      1590
+    ],
+    "ppothergameadmin:UserMarketRentLandList": [
+      1593,
+      1652
+    ],
+    "ppothergameadmin:UserMarketSeedList": [
+      1455,
+      1494
+    ],
+    "ppothergameadmin:UserMyMarketList": [
+      1655,
+      1772
+    ],
+    "ppothergameadmin:UserNoticeList": [
+      1775,
+      1823
+    ],
+    "ppothergameadmin:UserOrderList": [
+      2067,
+      2114
+    ],
+    "ppothergameadmin:UserRecommend": [
+      1001,
+      1070
+    ],
+    "ppothergameadmin:UserRecommendL": [
+      1072,
+      1151
+    ],
+    "ppothergameadmin:UserStakeGitRewardList": [
+      1238,
+      1286
+    ],
+    "ppothergameadmin:UserStakeGitStakeList": [
+      1200,
+      1236
+    ],
+    "ppothergameadmin:UserStakeRewardList": [
+      1826,
+      1895
+    ],
+    "ppothergameadmin:Withdraw": [
+      5197,
+      5265
+    ],
+    "ppothergameadmin:lessThanOrEqualZero": [
+      6262,
+      6264
+    ]
+  }
+}

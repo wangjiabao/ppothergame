@@ -1,0 +1,113 @@
+www.ppflsc.com 游戏 Nginx 配置，2026-10-03
+
+适用：宝塔、Nginx 1.17.6 或更新版本，Nginx 与两个 Go 服务部署在同一台服务器，浏览器直接访问源站。
+这是待安装配置，没有修改远程服务器。已用官方 Nginx 1.28.0 在本机隔离环境通过语法检查和 10 项行为验证。
+验证使用真实前端构建文件与模拟 Go 上游，覆盖页面与深层路由、缺失静态资源 404、后台访问名单、转发路径/参数/JWT、查询参数无法绕过限流、API 超限后静态资源可用、并发超限 429 和限流日志。
+这不是实际服务器、证书或真实 Go/MySQL 的容量验证。安装时仍必须在服务器执行 nginx -t 并检查正常游戏操作。
+数值是调试初始值，不能视为已验证的机器容量。若前面有 CDN/负载均衡，应先正确配置可信代理与真实访客 IP；不要直接信任任意客户端的 X-Forwarded-For。
+
+一、当前目录与端口
+
+App 构建目录：/Users/wangjiabao/Documents/farm-game5/dist
+后台构建目录：/Users/wangjiabao/Documents/game-admin/dist
+App Go 服务：127.0.0.1:6222
+后台 Go 服务：127.0.0.1:6220
+
+以宝塔站点 root /www/wwwroot/ppflsc.com 为例，上传 dist 内的所有文件：
+/www/wwwroot/ppflsc.com/game/index.html
+/www/wwwroot/ppflsc.com/game/assets/...
+/www/wwwroot/ppflsc.com/game/audio/...
+/www/wwwroot/ppflsc.com/game/home/...
+/www/wwwroot/ppflsc.com/adminsystem/index.html
+/www/wwwroot/ppflsc.com/adminsystem/static/...
+
+如果现有 root 是 /www/wwwroot/www.ppflsc.com，以上目录应全部改用该 root。
+不要额外套一层 dist；两个 HTML 必须就在 game 与 adminsystem 目录里。
+
+二、初始限流值
+
+普通 App 接口：每 IP 平均 10 次/秒，额外突发额度 20。
+全部公开 App 接口：合计平均 60 次/秒，额外突发额度 20。
+七个重接口：每 IP、每路径平均 1 次/秒，额外突发额度 2；包含首页、用户信息、背包和四个市场列表。
+授权/后台登录：每 IP、每路径平均 1 次/秒，额外突发额度 3。
+App 活动并发：每 IP 20，总量 40；HTTP/2 下并发请求分别计数。
+后台接口：每 IP 平均 5 次/秒，额外突发额度 10，并限制来源 IP。
+频率与并发超限返回 429。静态前端不设置这些限制。
+查询参数不参与重接口计数；例如换 page、num、t 仍然共享相同路径的限制。
+
+三、复制三个配置文件
+
+01_http_limits.conf -> /www/server/nginx/conf/ppflsc-http.conf
+02_site_locations.conf -> /www/server/nginx/conf/ppflsc-locations.conf
+03_admin_allowlist.conf -> /www/server/nginx/conf/ppflsc-admin-allow.conf
+
+不要把这三个片段丢进 /www/server/panel/vhost/nginx/*.conf 自动加载目录。
+
+先编辑 ppflsc-admin-allow.conf，在 deny all 之前填写实际管理员公网 IP：
+allow 实际公网IP;
+
+目前名单只允许本机，外部访问后台页面、后台静态资源及后台 API 都会被拒绝。
+这样设置的依据是当前后端有部分管理方法跳过 JWT 校验。固定 IP 访问限制不能替代后端修复。
+App 的 SetBuyLand 是无 JWT 的竞拍结算任务，只允许本机通过 Nginx 调用；原有远程任务调用需要迁到本机或另行明确授权来源。
+
+四、修改主配置与站点配置
+
+先备份主配置和当前 www.ppflsc.com 站点配置，留在自动加载目录外：
+mkdir -p /www/backup/nginx-ppflsc-20261003
+cp -pn /www/server/nginx/conf/nginx.conf /www/backup/nginx-ppflsc-20261003/nginx.conf
+cp -pn /www/server/panel/vhost/nginx/www.ppflsc.com.conf /www/backup/nginx-ppflsc-20261003/www.ppflsc.com.conf
+
+站点文件名请以宝塔实际显示的文件名为准。如果文件已经备份，不要覆盖原备份。
+
+在 /www/server/nginx/conf/nginx.conf 的 http {} 内、现有 vhost include 之前添加一次：
+include /www/server/nginx/conf/ppflsc-http.conf;
+
+在 www.ppflsc.com 对应的 HTTPS server {} 内添加一次：
+include /www/server/nginx/conf/ppflsc-locations.conf;
+
+原 server_name、root、listen、证书及证书验证配置保留；宝塔启用强制 HTTPS。
+如果 HTTP 与 HTTPS 分为两个 server，新片段放到 HTTPS server；80 端口继续承担 HTTPS 跳转与证书验证。
+移除与新片段冲突的 location = /、/game、/game/、/adminsystem、/adminsystem/、API 转发和旧四个重接口精确 location。
+移除旧 server 级 limit_conn、limit_req、limit_rate。它们会连静态资源一起限制。
+不要把新片段简单追加到旧重复 location 后面，重复定义会导致校验失败。
+新片段在 API location 内明确指定日志，即使原 server 有 access_log off，API 日志仍然开启；不要在这些 API location 内再加 access_log off。
+
+五、后端端口
+
+两个 Go 配置当前仍绑定 0.0.0.0。后端由你手动调整时，可将 http.addr 改为：
+App：127.0.0.1:6222
+后台：127.0.0.1:6220
+
+安全组不应对公网开放这两个端口，否则外部可以绕过 Nginx。本文没有修改 Go 配置或 AWS 规则。
+宝塔定时任务在本机运行，使用本机地址调用对应任务；不要把收款、提现、结算等任务接口当作连通性测试执行。
+
+六、检查并生效
+
+/www/server/nginx/sbin/nginx -t
+
+仅在校验成功后重载：
+/www/server/nginx/sbin/nginx -t && /www/server/nginx/sbin/nginx -s reload
+
+随后手动检查：
+https://www.ppflsc.com/game/
+https://www.ppflsc.com/game/game2
+https://www.ppflsc.com/adminsystem/
+
+后台需从已添加的公网 IP 访问。
+硬刷新页面，确认脚本与图片正常，缺失的 assets/audio/home/static 资源应返回 404。
+登录、首页、背包筛选、市场翻页、正常种植和收取各操作一遍，确认普通使用没有频繁 429。
+不要在未确认业务副作用的情况下用写接口做压测。
+
+七、观察日志
+
+tail -f /www/wwwlogs/ppflsc-api.log
+tail -f /www/wwwlogs/ppflsc-limit.log
+tail -f /www/wwwlogs/ppflsc-api-error.log
+
+日志是 JSON 行，记录路径、状态码、Nginx/上游耗时和限流状态，不记录 token、请求体或查询参数。
+req_limit=REJECTED 或 conn_limit=REJECTED，表示 Nginx 拦截；upstream_status=429 则可能是后端返回。
+若限制只是因为某个重接口正常操作被频繁拦截，可以把 pp_heavy 的 burst=2 调至 3，或将 rate=1r/s 调至 2r/s，再观察。不要直接同时放大全部限制。
+总并发 40 经常触发且 MySQL 仍很忙，应先处理慢 SQL、连接池与任务负载；如果 CPU/数据库都很空，再考虑放宽。
+
+日志轮转请用宝塔“日志切割”计划任务选择上述三个 ppflsc 日志，初始每天切割、保留 7 天。
+本方案没有自动封禁 IP。正常刷新或共用 IP 的用户也可能出现 429，先观察，不能只因少量 429 就封 IP。
