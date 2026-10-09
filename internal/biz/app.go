@@ -4154,84 +4154,84 @@ func (ac *AppUsecase) OpenBox(ctx context.Context, address string, req *pb.OpenB
 		}, nil
 	}
 
-	var (
-		configs []*Config
-		//priceOpen    float64
-		//priceOpenUse uint64
-		usdtAmount   float64
-		stakePrice   float64
-		stakePriceOn uint64
-	)
+	//var (
+	//	configs []*Config
+	//	//priceOpen    float64
+	//	//priceOpenUse uint64
+	//	//usdtAmount   float64
+	//	//stakePrice   float64
+	//	//stakePriceOn uint64
+	//)
 
 	// 配置
-	configs, err = ac.userRepo.GetConfigByKeys(ctx,
-		"open_box_price",
-		"open_box_price_use",
-		"box_amount",
-		"stake_price",
-		"stake_price_on",
-	)
-	if nil != err || nil == configs {
-		return &pb.OpenBoxReply{
-			Status: "配置错误",
-		}, nil
-	}
-
-	for _, vConfig := range configs {
-		//if "open_box_price" == vConfig.KeyName {
-		//	priceOpen, _ = strconv.ParseFloat(vConfig.Value, 10)
-		//}
-		//
-		//if "open_box_price_use" == vConfig.KeyName {
-		//	priceOpenUse, _ = strconv.ParseUint(vConfig.Value, 10, 64)
-		//}
-
-		if "box_amount" == vConfig.KeyName {
-			usdtAmount, _ = strconv.ParseFloat(vConfig.Value, 10)
-		}
-
-		if "stake_price" == vConfig.KeyName {
-			stakePrice, _ = strconv.ParseFloat(vConfig.Value, 10)
-		}
-		if "stake_price_on" == vConfig.KeyName {
-			stakePriceOn, _ = strconv.ParseUint(vConfig.Value, 10, 64)
-		}
-	}
+	//configs, err = ac.userRepo.GetConfigByKeys(ctx,
+	//	"open_box_price",
+	//	"open_box_price_use",
+	//	"box_amount",
+	//	"stake_price",
+	//	"stake_price_on",
+	//)
+	//if nil != err || nil == configs {
+	//	return &pb.OpenBoxReply{
+	//		Status: "配置错误",
+	//	}, nil
+	//}
+	//
+	//for _, vConfig := range configs {
+	//	//if "open_box_price" == vConfig.KeyName {
+	//	//	priceOpen, _ = strconv.ParseFloat(vConfig.Value, 10)
+	//	//}
+	//	//
+	//	//if "open_box_price_use" == vConfig.KeyName {
+	//	//	priceOpenUse, _ = strconv.ParseUint(vConfig.Value, 10, 64)
+	//	//}
+	//
+	//	//if "box_amount" == vConfig.KeyName {
+	//	//	usdtAmount, _ = strconv.ParseFloat(vConfig.Value, 10)
+	//	//}
+	//	//
+	//	//if "stake_price" == vConfig.KeyName {
+	//	//	stakePrice, _ = strconv.ParseFloat(vConfig.Value, 10)
+	//	//}
+	//	//if "stake_price_on" == vConfig.KeyName {
+	//	//	stakePriceOn, _ = strconv.ParseUint(vConfig.Value, 10, 64)
+	//	//}
+	//}
 
 	var ispay float64
-	if 1 == stakePriceOn {
-		ispay = usdtAmount / stakePrice
-	} else {
-		//var (
-		//	tmp0 float64
-		//	tmp1 float64
-		//)
-		//tmp0, tmp1, err = GetReservers()
-		//if nil != err || 1 >= tmp0 || 1 >= tmp1 {
-		//	return &pb.OpenBoxReply{
-		//		Status: "获取交易池数据失败",
-		//	}, nil
-		//}
-
-		var (
-			newIspayPrice float64
-		)
-		newIspayPrice, err = GetIspayPrice()
-		if nil != err || 0.0000001 > newIspayPrice {
-			fmt.Println(err, newIspayPrice, "err open box ispay price")
-			return &pb.OpenBoxReply{
-				Status: "获取交易池数据失败",
-			}, nil
-		}
-
-		ispay = usdtAmount / newIspayPrice
-	}
-
-	if 0 >= ispay {
-		return &pb.OpenBoxReply{
-			Status: "配置错误",
-		}, nil
-	}
+	//if 1 == stakePriceOn {
+	//	ispay = usdtAmount / stakePrice
+	//} else {
+	//	//var (
+	//	//	tmp0 float64
+	//	//	tmp1 float64
+	//	//)
+	//	//tmp0, tmp1, err = GetReservers()
+	//	//if nil != err || 1 >= tmp0 || 1 >= tmp1 {
+	//	//	return &pb.OpenBoxReply{
+	//	//		Status: "获取交易池数据失败",
+	//	//	}, nil
+	//	//}
+	//
+	//	var (
+	//		newIspayPrice float64
+	//	)
+	//	newIspayPrice, err = GetIspayPrice()
+	//	if nil != err || 0.0000001 > newIspayPrice {
+	//		fmt.Println(err, newIspayPrice, "err open box ispay price")
+	//		return &pb.OpenBoxReply{
+	//			Status: "获取交易池数据失败",
+	//		}, nil
+	//	}
+	//
+	//	ispay = usdtAmount / newIspayPrice
+	//}
+	//
+	//if 0 >= ispay {
+	//	return &pb.OpenBoxReply{
+	//		Status: "配置错误",
+	//	}, nil
+	//}
 
 	//userBox, err = ac.userRepo.GetBoxRecordByUserId(ctx, user.ID)
 	//if nil != err {
