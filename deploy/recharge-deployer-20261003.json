@@ -32,8 +32,14 @@
       "block_number": 125469035,
       "report_file": "/Users/wangjiabao/Documents/ppothergame/deploy/buysomething-bsc-20261003.json",
       "recipients": [
-        { "address": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1", "parts": 995 },
-        { "address": "0xa33b9A19E702fb08e5744432Ac328A24DCc90235", "parts": 5 }
+        {
+          "address": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1",
+          "parts": 995
+        },
+        {
+          "address": "0xa33b9A19E702fb08e5744432Ac328A24DCc90235",
+          "parts": 5
+        }
       ],
       "recipient_denominator": 1000
     }
@@ -48,5 +54,26 @@
   "frontend_api": {
     "app": "https://www.ppflsc.com",
     "admin": "https://www.ppflsc.com/"
+  },
+  "latest_usdt_deployment": {
+    "client_date": "2026-10-12",
+    "chain_id": 56,
+    "address": "0x5C027F38D96fE70d34F34ef75c9ea130d128d253",
+    "transaction_hash": "0x981610eb54588baf73ef3ed23959d7923bb1fdb6a796b3c5bc11e1facfab6d1e",
+    "report_file": "/Users/wangjiabao/Documents/ppothergame/deploy/usdt-recharge-20261012/deployment.json",
+    "recipients": [
+      {
+        "address": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1",
+        "parts": 995
+      },
+      {
+        "address": "0xc7C41EdfD5De9A4e1c48993E41787F3e605d0010",
+        "parts": 5
+      }
+    ],
+    "recipient_denominator": 1000,
+    "frontend_dist": "/Users/wangjiabao/Documents/farm-game5/dist",
+    "frontend_upload_performed": false,
+    "backend_cutover_performed": false
   }
 }

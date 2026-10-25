@@ -1,0 +1,15 @@
+{
+  "client_date": "2026-10-12",
+  "status": "built_and_checked",
+  "dist": "/Users/wangjiabao/Documents/farm-game5/dist",
+  "usdt_recharge_contract": "0x5C027F38D96fE70d34F34ef75c9ea130d128d253",
+  "compiled_files_with_new_address": [
+    "assets/goods_13-DUvCfKDH.js"
+  ],
+  "old_recharge_address_present_in_js": false,
+  "static_asset_references_checked": 144,
+  "missing_asset_references": [],
+  "index_sha256": "500d7a9d2f1c7a21aff1d04bb73f67357e5a289e62b93baffc4945140009fcdf",
+  "production_upload_performed": false,
+  "target_server_directory": "/www/wwwroot/www.ppflsc.com/game/"
+}

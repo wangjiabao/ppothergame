@@ -1,0 +1,120 @@
+{
+  "client_date": "2026-10-12",
+  "contract": "BuySomething",
+  "source": "contracts/bsc/recharge-20261012/BuySomething.sol",
+  "status": "deployed_verified_two_rpcs_finalized",
+  "chain_id": 56,
+  "rpc": "https://bsc-dataseed.bnbchain.org",
+  "deployer": "0xf39378039D6a422bEF8D88cEa08D727618Ae624a",
+  "token": "0x55d398326f99059fF775485246999027B3197955",
+  "token_name": "Tether USD",
+  "token_symbol": "USDT",
+  "token_decimals": 18,
+  "recipients": [
+    {
+      "address": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1",
+      "parts": 995
+    },
+    {
+      "address": "0xc7C41EdfD5De9A4e1c48993E41787F3e605d0010",
+      "parts": 5
+    }
+  ],
+  "recipient_denominator": 1000,
+  "amount_unit": "num * 10^18; buy(1) transfers 1 USDT; minimum num=5",
+  "nonce": 4,
+  "contract_address": "0x5C027F38D96fE70d34F34ef75c9ea130d128d253",
+  "estimated_gas": "520292",
+  "gas_limit": "624351",
+  "gas_price_wei": "50000000",
+  "balance_before_wei": "4582751100000000",
+  "maximum_fee_wei": "31217550000000",
+  "compiler": "0.8.26+commit.8a97fa7a.Emscripten.clang",
+  "compiler_settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": true,
+    "evmVersion": "cancun",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    }
+  },
+  "creation_code_hash": "0xf96ff77fc4e0382f5023adb7f62b7981a1ad30575e9fe7b59fd8bfc0cbc0b262",
+  "runtime_code_hash": "0xb768a9155070e960550bc2b28c40278bf17b0b7c8f3c69157259b0613ba228f1",
+  "transaction_hash": "0x981610eb54588baf73ef3ed23959d7923bb1fdb6a796b3c5bc11e1facfab6d1e",
+  "block_number": 127255401,
+  "block_hash": "0xc8109b01600e11a68510625b0c65ecb1aa85daba0848d45b0b9525ea1f06bfd7",
+  "receipt_status": 1,
+  "gas_used": "515037",
+  "effective_gas_price_wei": "50000000",
+  "actual_fee_wei": "25751850000000",
+  "confirmations": 7,
+  "balance_after_wei": "4556999250000000",
+  "verification": {
+    "runtime_bytecode_matches": true,
+    "creation_bytecode_matches": true,
+    "token_address_matches": true,
+    "initial_user_length": 0
+  },
+  "independent_verification": {
+    "rpc": "https://bsc-dataseed1.defibit.io",
+    "chain_id": 56,
+    "receipt_status": 1,
+    "block_hash_matches": true,
+    "runtime_bytecode_matches": true,
+    "creation_bytecode_matches": true,
+    "configured_token": "0x55d398326f99059fF775485246999027B3197955",
+    "user_length": 0,
+    "head_block": 127255468,
+    "confirmations": 68,
+    "finalized_block": 127255466,
+    "finalized_covers_deployment": true
+  },
+  "local_validation": {
+    "status": "passed",
+    "local_only": true,
+    "amounts_usdt": [
+      5,
+      10,
+      1000
+    ],
+    "large_recipient": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1",
+    "large_parts": 995,
+    "small_recipient": "0xc7C41EdfD5De9A4e1c48993E41787F3e605d0010",
+    "small_parts": 5,
+    "denominator": 1000,
+    "minimum_rejection_passed": true,
+    "failed_second_transfer_rolls_back_first": true,
+    "record_amount_and_user_passed": true,
+    "usdt_token_matches": true
+  },
+  "frontend_build": {
+    "client_date": "2026-10-12",
+    "status": "built_and_checked",
+    "dist": "/Users/wangjiabao/Documents/farm-game5/dist",
+    "usdt_recharge_contract": "0x5C027F38D96fE70d34F34ef75c9ea130d128d253",
+    "compiled_files_with_new_address": [
+      "assets/goods_13-DUvCfKDH.js"
+    ],
+    "old_recharge_address_present_in_js": false,
+    "static_asset_references_checked": 144,
+    "missing_asset_references": [],
+    "index_sha256": "500d7a9d2f1c7a21aff1d04bb73f67357e5a289e62b93baffc4945140009fcdf",
+    "production_upload_performed": false,
+    "target_server_directory": "/www/wwwroot/www.ppflsc.com/game/"
+  },
+  "backend_cutover_performed": false
+}

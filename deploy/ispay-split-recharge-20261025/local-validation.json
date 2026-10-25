@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "network": "local mock chain 31337",
+  "production_transactions": 0,
+  "compiler": "0.8.26+commit.8a97fa7a.Emscripten.clang",
+  "source_sha256": "f4e489bcd3da856a60c273d96f91ddf147d6416e97caaed7e1b142b6a0a71f54",
+  "results": [
+    {
+      "name": "0.001 ISPAY splits exactly, no rounding loss",
+      "passed": true
+    },
+    {
+      "name": "1 ISPAY: 0.95 / 0.0075 / 0.01 / 0.0225 / 0.01",
+      "passed": true
+    },
+    {
+      "name": "Fractional input: 1.234 ISPAY",
+      "passed": true
+    },
+    {
+      "name": "100 ISPAY and repeated same-user records",
+      "passed": true
+    },
+    {
+      "name": "Zero input remains accepted with this token, as original contract",
+      "passed": true
+    },
+    {
+      "name": "Existing scanner getters and record order preserved",
+      "passed": true
+    },
+    {
+      "name": "Recipient 2 returns false: all transfers and records roll back",
+      "passed": true
+    },
+    {
+      "name": "Recipient 5 returns false: all transfers and records roll back",
+      "passed": true
+    },
+    {
+      "name": "Fifth transfer reverts: entire operation rolls back",
+      "passed": true
+    },
+    {
+      "name": "Insufficient total allowance: earlier transfers roll back",
+      "passed": true
+    },
+    {
+      "name": "Reentrancy guard blocks nested buy",
+      "passed": true
+    },
+    {
+      "name": "Largest original valid num: no additional split arithmetic overflow",
+      "passed": true
+    },
+    {
+      "name": "Original amount multiplication overflow remains rejected",
+      "passed": true
+    },
+    {
+      "name": "Original ABI, constructor and all non-transfer source preserved",
+      "passed": true
+    }
+  ]
+}

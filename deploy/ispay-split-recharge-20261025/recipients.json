@@ -1,0 +1,26 @@
+{
+  "token": "0x6cf23367d08B375021f411a07D2e7E89F4999999",
+  "denominator": 10000,
+  "recipients": [
+    {
+      "address": "0xa1E54373034aaE3C00Df1b9b89B20d2df55e2CAD",
+      "parts": 9500
+    },
+    {
+      "address": "0x202Afd67c4016d2efD456b412a10991B561935AD",
+      "parts": 75
+    },
+    {
+      "address": "0x279F2B0B788b50c90ceCd74C9134D152083A87B7",
+      "parts": 100
+    },
+    {
+      "address": "0x68d1536f75436Fc9cAA4a9582447b9e1b325fd36",
+      "parts": 225
+    },
+    {
+      "address": "0x774A649d5Cf7DAb055300DF12F8bE52E8EcD0b24",
+      "parts": 100
+    }
+  ]
+}

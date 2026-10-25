@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "local_only": true,
+  "amounts_usdt": [
+    5,
+    10,
+    1000
+  ],
+  "large_recipient": "0xDf4cbC6c9c4F084B6E75177852C6a29f206b8Fe1",
+  "large_parts": 995,
+  "small_recipient": "0xc7C41EdfD5De9A4e1c48993E41787F3e605d0010",
+  "small_parts": 5,
+  "denominator": 1000,
+  "minimum_rejection_passed": true,
+  "failed_second_transfer_rolls_back_first": true,
+  "record_amount_and_user_passed": true,
+  "usdt_token_matches": true
+}

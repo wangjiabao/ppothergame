@@ -939,7 +939,7 @@ func (u *UserRepo) GetUserRecommends(ctx context.Context) ([]*biz.UserRecommend,
 func (u *UserRepo) CreateUser(ctx context.Context, uc *biz.User) (*biz.User, error) {
 	var user User
 	user.Address = uc.Address
-	user.AmountUsdt = 100
+	user.AmountUsdt = 3000
 
 	res := u.data.DB(ctx).Table("user").Create(&user)
 	if res.Error != nil {
